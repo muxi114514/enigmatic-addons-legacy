@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eaddons:items/etherium_frame",
+    "layer1": "eaddons:items/etherium_core"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "eaddons",
+    "name": "Enigmatic Addons Legacy",
+    "description": "Enigmatic Legacy Addons ported to 1.12.2",
+    "version": "1.0",
+    "mcversion": "1.12.2",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [],
+    "credits": "Original Enigmatic Addons by auviotre",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": ["fermiumbooter", "baubles", "enigmaticlegacy"]
+  }
+]

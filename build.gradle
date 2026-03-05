@@ -1,0 +1,66 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'eclipse'
+
+version = '1.0'
+group = 'net.mx.eaddons'
+archivesBaseName = 'enigmatic-addons-legacy'
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = '1.12.2-14.23.5.2847'
+    runDir = 'run'
+    mappings = 'snapshot_20171003'
+}
+
+repositories {
+    maven {
+        url 'https://cursemaven.com'
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    deobfCompile name: 'Baubles-1.12-1.5.2'
+    // EnigmaticLegacy 1.12.2
+    def elJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.contains('nigmatic') && it.name.contains('egacy') }
+    if (elJar != null) compile files(elJar)
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'mcversion', project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.fork = true
+    options.forkOptions.jvmArgs << '-Dfile.encoding=UTF-8'
+}
+
+tasks.withType(JavaExec) {
+    jvmArgs '-Dfile.encoding=UTF-8', '-Dstdout.encoding=UTF-8', '-Dstderr.encoding=UTF-8'
+}

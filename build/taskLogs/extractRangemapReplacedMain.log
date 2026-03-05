@@ -1,0 +1,179 @@
+Unsupposrted library path: E:\enigmatic-addons-legacy\build\classes\java\api
+Unsupposrted library path: E:\enigmatic-addons-legacy\build\resources\api
+Symbol range map extraction starting
+Processing 58 files
+startProcessing "net/mx/eaddons/ClientProxyEAddons.java" md5: f5020fbf1bbe6e4e67ccdddec5851924
+endProcessing "net/mx/eaddons/ClientProxyEAddons.java"
+
+startProcessing "net/mx/eaddons/EAddonsMod.java" md5: b705d3a7ab02f1781e43d1b0ca786c93
+endProcessing "net/mx/eaddons/EAddonsMod.java"
+
+startProcessing "net/mx/eaddons/IProxyEAddons.java" md5: 30f13e118f1e160b6760d2b6416311c9
+endProcessing "net/mx/eaddons/IProxyEAddons.java"
+
+startProcessing "net/mx/eaddons/ServerProxyEAddons.java" md5: e3f736717b9d6b0c02873cac484ef329
+endProcessing "net/mx/eaddons/ServerProxyEAddons.java"
+
+startProcessing "net/mx/eaddons/client/EtheriumCoreKeyHandler.java" md5: 5166925f406d88ea8613ac45f4236b85
+endProcessing "net/mx/eaddons/client/EtheriumCoreKeyHandler.java"
+
+startProcessing "net/mx/eaddons/client/EtheriumCoreShieldAuraRenderer.java" md5: 4f203abb438dece653726e67b8772b38
+endProcessing "net/mx/eaddons/client/EtheriumCoreShieldAuraRenderer.java"
+
+startProcessing "net/mx/eaddons/item/AntiqueBagCompatFirstAid.java" md5: b767d89ec0163af65169ece88eb06589
+endProcessing "net/mx/eaddons/item/AntiqueBagCompatFirstAid.java"
+
+startProcessing "net/mx/eaddons/item/AntiqueBagEventHandler.java" md5: 12cc5cd04ff9f54450c4eda35d054e12
+endProcessing "net/mx/eaddons/item/AntiqueBagEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/AntiqueBagGuiHandler.java" md5: a1c8c04e53e230e254ab8cf1dbc101fd
+endProcessing "net/mx/eaddons/item/AntiqueBagGuiHandler.java"
+
+startProcessing "net/mx/eaddons/item/ArtificialFlowerConfig.java" md5: 468103b93749f2fc707f217cfb966fa3
+endProcessing "net/mx/eaddons/item/ArtificialFlowerConfig.java"
+
+startProcessing "net/mx/eaddons/item/ArtificialFlowerEventHandler.java" md5: b3b7380567bb91bdd569fac3b9a1a92b
+endProcessing "net/mx/eaddons/item/ArtificialFlowerEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/ContainerAntiqueBag.java" md5: 2943a30fa90dda28205d5bf3050d0670
+endProcessing "net/mx/eaddons/item/ContainerAntiqueBag.java"
+
+startProcessing "net/mx/eaddons/item/ContainerArtificialFlower.java" md5: 013f9ced4af250d02de23496ea9c500a
+endProcessing "net/mx/eaddons/item/ContainerArtificialFlower.java"
+
+startProcessing "net/mx/eaddons/item/DragonBowBrewingRecipe.java" md5: 12c9b33c63ce992eb1f85e1f55a944ec
+endProcessing "net/mx/eaddons/item/DragonBowBrewingRecipe.java"
+
+startProcessing "net/mx/eaddons/item/DragonBowConfig.java" md5: 6e10b58af7d2291f5a16ad97f38d554c
+endProcessing "net/mx/eaddons/item/DragonBowConfig.java"
+
+startProcessing "net/mx/eaddons/item/EarthPromiseClientHelper.java" md5: 6419e21e9d0adf0b223fc18b77ad51a5
+endProcessing "net/mx/eaddons/item/EarthPromiseClientHelper.java"
+
+startProcessing "net/mx/eaddons/item/EarthPromiseConfig.java" md5: 0dace226bc03ee2d85524ba94665dfbe
+endProcessing "net/mx/eaddons/item/EarthPromiseConfig.java"
+
+startProcessing "net/mx/eaddons/item/EarthPromiseCooldownMessage.java" md5: 7d021d80f9270abeecabc5bbb1b68952
+endProcessing "net/mx/eaddons/item/EarthPromiseCooldownMessage.java"
+
+startProcessing "net/mx/eaddons/item/EarthPromiseEventHandler.java" md5: 0dd608156fea817c1e7589696b6569e0
+endProcessing "net/mx/eaddons/item/EarthPromiseEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/EmblemAdventurerConfig.java" md5: 775fd73d087f664bea72cdfd8acccae6
+endProcessing "net/mx/eaddons/item/EmblemAdventurerConfig.java"
+
+startProcessing "net/mx/eaddons/item/EmblemAdventurerEventHandler.java" md5: 4b52386217fd594bc54f83cd628335a8
+endProcessing "net/mx/eaddons/item/EmblemAdventurerEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/EnchantmentMultishot.java" md5: 409b1406f6d8bceaa1df5161ff07bfee
+endProcessing "net/mx/eaddons/item/EnchantmentMultishot.java"
+
+startProcessing "net/mx/eaddons/item/EntityDragonBreathArrow.java" md5: 945f7b049505c58208e02b345ebe9a5b
+endProcessing "net/mx/eaddons/item/EntityDragonBreathArrow.java"
+
+startProcessing "net/mx/eaddons/item/EtheriumCoreClientHelper.java" md5: 3462d714dce67f9fc9b5d5b4db6b49f6
+endProcessing "net/mx/eaddons/item/EtheriumCoreClientHelper.java"
+
+startProcessing "net/mx/eaddons/item/EtheriumCoreConfig.java" md5: 4c43d3f436a970ee4cb1fcebb65a58fe
+endProcessing "net/mx/eaddons/item/EtheriumCoreConfig.java"
+
+startProcessing "net/mx/eaddons/item/EtheriumCoreEventHandler.java" md5: 443bbd9a6fe6cc29ecb2b26d5780ef8a
+endProcessing "net/mx/eaddons/item/EtheriumCoreEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/EtheriumCoreSyncMessage.java" md5: 51ad1f1e9b15850a3a96c7ca1d54f898
+endProcessing "net/mx/eaddons/item/EtheriumCoreSyncMessage.java"
+
+startProcessing "net/mx/eaddons/item/EtheriumCoreTriggerMessage.java" md5: 331910c1107076255cbf3e6dcddfafae
+endProcessing "net/mx/eaddons/item/EtheriumCoreTriggerMessage.java"
+
+startProcessing "net/mx/eaddons/item/ForgerGemClientHelper.java" md5: 2bab9ecd28b3c5edad114ee47bc9f0f6
+endProcessing "net/mx/eaddons/item/ForgerGemClientHelper.java"
+
+startProcessing "net/mx/eaddons/item/ForgerGemConfig.java" md5: 9f03c932d77b2f3da5a86e2520684084
+endProcessing "net/mx/eaddons/item/ForgerGemConfig.java"
+
+startProcessing "net/mx/eaddons/item/ForgerGemEventHandler.java" md5: 7988ef9da47fc839e9341dd304e59d77
+endProcessing "net/mx/eaddons/item/ForgerGemEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/GuiAntiqueBag.java" md5: 009ebc884a70f7249c256ab0cfcc8a05
+endProcessing "net/mx/eaddons/item/GuiAntiqueBag.java"
+
+startProcessing "net/mx/eaddons/item/GuiArtificialFlower.java" md5: 641a888b8274323df236d65de1eadf58
+endProcessing "net/mx/eaddons/item/GuiArtificialFlower.java"
+
+startProcessing "net/mx/eaddons/item/HellBladeCharmEventHandler.java" md5: a2ded767646815ee800e6a99778d74e1
+endProcessing "net/mx/eaddons/item/HellBladeCharmEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/InventoryAntiqueBag.java" md5: feff6c447323a7a8a1a32a8acf334603
+endProcessing "net/mx/eaddons/item/InventoryAntiqueBag.java"
+
+startProcessing "net/mx/eaddons/item/ItemAntiqueBag.java" md5: 97523afdf196b9e84e801bf2c7858c43
+endProcessing "net/mx/eaddons/item/ItemAntiqueBag.java"
+
+startProcessing "net/mx/eaddons/item/ItemArtificialFlower.java" md5: 4a69cc6e6c33fedb5066ccb18c9e383b
+endProcessing "net/mx/eaddons/item/ItemArtificialFlower.java"
+
+startProcessing "net/mx/eaddons/item/ItemDragonBow.java" md5: d596784afc724ccf48b1a76533fad651
+    Compile Error! Pb(1102) At least one of the problems in category 'null' is not analysed due to a compiler option being ignored
+endProcessing "net/mx/eaddons/item/ItemDragonBow.java"
+
+startProcessing "net/mx/eaddons/item/ItemEarthPromise.java" md5: 8fdc07badc912c77b44065b87fb8dca5
+endProcessing "net/mx/eaddons/item/ItemEarthPromise.java"
+
+startProcessing "net/mx/eaddons/item/ItemEmblemOfAdventurer.java" md5: 55e7fe4f43a699439d34a7a79e39e4a0
+endProcessing "net/mx/eaddons/item/ItemEmblemOfAdventurer.java"
+
+startProcessing "net/mx/eaddons/item/ItemEtheriumCore.java" md5: 1771203d39c8d546fa60c948f155bc8a
+endProcessing "net/mx/eaddons/item/ItemEtheriumCore.java"
+
+startProcessing "net/mx/eaddons/item/ItemForgerGem.java" md5: dfc98bc5c9021c879d717deeae3dfb15
+endProcessing "net/mx/eaddons/item/ItemForgerGem.java"
+
+startProcessing "net/mx/eaddons/item/ItemHellBladeCharm.java" md5: e31231dbf2a2e996c70b6fdec36b8ace
+endProcessing "net/mx/eaddons/item/ItemHellBladeCharm.java"
+
+startProcessing "net/mx/eaddons/item/ItemIchorDroplet.java" md5: 10835af5ca45a3cd14477da2c3e8ff45
+endProcessing "net/mx/eaddons/item/ItemIchorDroplet.java"
+
+startProcessing "net/mx/eaddons/item/ItemInsigniaOfDespair.java" md5: 3e94d52ff046907e18702c2b860df8e8
+endProcessing "net/mx/eaddons/item/ItemInsigniaOfDespair.java"
+
+startProcessing "net/mx/eaddons/item/ItemPureHeart.java" md5: 8fe1be7dc3970fe893d11c4d5be31376
+endProcessing "net/mx/eaddons/item/ItemPureHeart.java"
+
+startProcessing "net/mx/eaddons/item/ItemQuartzRing.java" md5: 70203efa2b3a45526753b11850409ff7
+endProcessing "net/mx/eaddons/item/ItemQuartzRing.java"
+
+startProcessing "net/mx/eaddons/item/ItemTheBless.java" md5: 2ab106811f0d6f44e74ed25d95b1a35f
+endProcessing "net/mx/eaddons/item/ItemTheBless.java"
+
+startProcessing "net/mx/eaddons/item/ItemTotemOfMalice.java" md5: 309a74c97edf0ebb2fe7468db2f0bfb1
+endProcessing "net/mx/eaddons/item/ItemTotemOfMalice.java"
+
+startProcessing "net/mx/eaddons/item/LootHandler.java" md5: ccb755bdcc04cfe90e294ef20a143819
+endProcessing "net/mx/eaddons/item/LootHandler.java"
+
+startProcessing "net/mx/eaddons/item/QuartzRingEventHandler.java" md5: a0d732ba0445ae1840d3f2be47f571c9
+endProcessing "net/mx/eaddons/item/QuartzRingEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/RecipeHandler.java" md5: 954f06fcf911ad287377893678bfb79e
+endProcessing "net/mx/eaddons/item/RecipeHandler.java"
+
+startProcessing "net/mx/eaddons/item/RenderDragonBreathArrow.java" md5: ba01fcb63358a2712288b2faf7ab54c2
+endProcessing "net/mx/eaddons/item/RenderDragonBreathArrow.java"
+
+startProcessing "net/mx/eaddons/item/TheBlessEventHandler.java" md5: 235649990fe95f0294ec38e5313d0920
+endProcessing "net/mx/eaddons/item/TheBlessEventHandler.java"
+
+startProcessing "net/mx/eaddons/item/TotemOfMaliceConfig.java" md5: ddc667318a604a2096ecc65c01c74987
+endProcessing "net/mx/eaddons/item/TotemOfMaliceConfig.java"
+
+startProcessing "net/mx/eaddons/item/TotemOfMaliceEventHandler.java" md5: e5fd3a4708386af3a0ede54ea2a46b18
+endProcessing "net/mx/eaddons/item/TotemOfMaliceEventHandler.java"
+
+startProcessing "net/mx/eaddons/potion/PotionDragonBreath.java" md5: 31d8c0e16f5d97203fdd71e17ba7522d
+endProcessing "net/mx/eaddons/potion/PotionDragonBreath.java"
+
+startProcessing "net/mx/eaddons/potion/PotionIchorCorrosion.java" md5: 6a52e1742998b70c6c16988af287aa79
+endProcessing "net/mx/eaddons/potion/PotionIchorCorrosion.java"
+
