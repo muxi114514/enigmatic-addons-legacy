@@ -25,8 +25,12 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.ResourceLocation;
 
+import net.minecraftforge.common.config.Configuration;
+
 import net.mx.eaddons.item.*;
 import net.mx.eaddons.potion.*;
+
+import java.io.File;
 
 import net.minecraftforge.fml.common.registry.EntityEntry;
 
@@ -57,13 +61,20 @@ public class EAddonsMod {
                 MinecraftForge.EVENT_BUS.register(new TotemOfMaliceEventHandler());
                 MinecraftForge.EVENT_BUS.register(new EmblemAdventurerEventHandler());
 
-                ForgerGemConfig.init(event.getModConfigurationDirectory());
-                ArtificialFlowerConfig.init(event.getModConfigurationDirectory());
-                DragonBowConfig.init(event.getModConfigurationDirectory());
-                EarthPromiseConfig.init(event.getModConfigurationDirectory());
-                TotemOfMaliceConfig.init(event.getModConfigurationDirectory());
-                EtheriumCoreConfig.init(event.getModConfigurationDirectory());
-                EmblemAdventurerConfig.init(event.getModConfigurationDirectory());
+                Configuration config = new Configuration(new File(event.getModConfigurationDirectory(), MODID + ".cfg"));
+                config.load();
+
+                ForgerGemConfig.init(config);
+                ArtificialFlowerConfig.init(config);
+                DragonBowConfig.init(config);
+                EarthPromiseConfig.init(config);
+                TotemOfMaliceConfig.init(config);
+                EtheriumCoreConfig.init(config);
+                EmblemAdventurerConfig.init(config);
+
+                if (config.hasChanged()) {
+                        config.save();
+                }
 
                 NetworkRegistry.INSTANCE.registerGuiHandler(this, new AntiqueBagGuiHandler());
 

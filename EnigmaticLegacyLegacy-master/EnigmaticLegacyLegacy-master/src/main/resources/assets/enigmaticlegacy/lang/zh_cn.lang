@@ -1,0 +1,468 @@
+#Blocks
+tile.astral_block.name=袋装星尘
+tile.etherium_block.name=以太合金块
+
+#bauble
+item.enigmatic_amulet.name=神秘护身符
+item.storage_crystal.name=超维容器
+item.unwitnessed_amulet.name=无主护身符
+item.cursed_ring.name=七咒之戒
+item.cursed_stone.name=邪恶之石
+item.soul_crystal.name=灵魂水晶
+item.iron_ring.name=铁指环
+item.gem_ring.name=精美戒指
+item.ender_ring.name=末影之戒
+item.magnet_ring.name=磁力之戒
+item.super_magnet_ring.name=错位之戒
+item.monster_charm.name=怪物猎人勋章
+item.mining_charm.name=猎宝者护符
+item.berserk_emblem.name=血战沙场之证
+item.mega_sponge.name=超级海绵
+item.enchanter_pearl.name=附魔师的珍珠
+item.xp_scroll.name=永恒智慧卷轴
+item.cursed_scroll.name=千咒卷轴
+item.heaven_scroll.name=天堂之礼
+item.fabulous_scroll.name=造物主的恩赐
+item.animal_guide.name=动物友好指南
+item.ascension_amulet.name=飞升护符
+item.enigmatic_eye_dormant.name=休眠之眼
+item.enigmatic_eye_active.name=莫测之眼
+item.eldritch_amulet.name=轻蔑之约
+item.desolation_ring.name=荒芜之负
+
+#SpellStone
+item.golem_heart.name=魔像之心
+item.ocean_stone.name=海洋意志
+item.angel_blessing.name=天使之祝
+item.void_pearl.name=虚空珍珠
+
+#material
+item.astral_dust.name=星尘
+item.ender_rod.name=末影棍
+item.etherium_ore.name=以太矿石
+item.etherium_ingot.name=以太锭
+item.earth_heart.name=大地之心
+item.twisted_core.name=扭曲之心
+item.witherite_catalyst.name=凋灵下界合金碎片
+item.witherite_ingot.name=凋灵下界合金锭
+item.evil_essence.name=邪恶精髓
+item.thicc_scroll.name=空白卷轴
+item.evil_ingot.name=极恶锭
+item.cosmic_heart.name=寰宇之心
+
+#armor & tools
+item.the_acknowledgment.name=启示之证
+item.the_twist.name=倒转之启
+item.the_infinitum.name=无止之言
+item.abyssal_heart.name=深渊之心
+item.etherium_helm.name=以太头盔
+item.etherium_chest.name=以太胸甲
+item.etherium_legs.name=以太护腿
+item.etherium_boots.name=以太靴子
+item.etherium_pickaxe.name=以太镐
+item.etherium_axe.name=以太斧
+item.etherium_spade.name=以太锹
+item.etherium_sword.name=以太阔剑
+item.etherium_scythe.name=以太镰刀
+item.astral_breaker.name=星光破坏锤
+item.infinimeal.name=狂野生长精华
+item.infernal_shield.name=烈焰之傲壁垒
+item.enchantment_transposer.name=求知之书
+item.eldritch_pan.name=饕餮之锅
+item.void_stone.name=遗忘之石
+item.soul_compass.name=被诅咒者的寻路指针
+item.extradimensional_eye.name=超维之眼
+
+tooltip.enigmaticlegacy.holdShift=§5按住 §6Shift§5 查看详情
+
+tooltip.enigmaticlegacy.theAcknowledgment1=§5那来自于启示的眩目光晕，
+tooltip.enigmaticlegacy.theAcknowledgment2=§5将会焚化那些拒绝承启之人
+
+tooltip.enigmaticlegacy.heavenTome1=§5在§6信标§5范围内
+tooltip.enigmaticlegacy.heavenTome2=§5给予你飞行的能力
+tooltip.enigmaticlegacy.heavenTome3=§5飞行时会缓慢消耗你的经验值
+tooltip.enigmaticlegacy.heavenTome4=§5补偿飞行时的挖掘速度损失
+
+tooltip.enigmaticlegacy.fabulousScroll1=§5给予你飞行的能力
+tooltip.enigmaticlegacy.fabulousScroll2=§5飞行时会快速消耗你的经验值
+tooltip.enigmaticlegacy.fabulousScroll3=§5在§6信标§5范围内时
+tooltip.enigmaticlegacy.fabulousScroll4=§5飞行不消耗经验值
+tooltip.enigmaticlegacy.fabulousScroll5=§5补偿飞行时的挖掘速度损失
+
+tooltip.enigmaticlegacy.angelBlessing1=§d主动技能：
+tooltip.enigmaticlegacy.angelBlessing2=§6- 向你视野的方向运动时，你的速度会在增加
+tooltip.enigmaticlegacy.angelBlessingCooldown=§d冷却：§6
+tooltip.enigmaticlegacy.angelBlessingCooldown_1=§6 秒
+tooltip.enigmaticlegacy.angelBlessing3=§d被动效果：
+tooltip.enigmaticlegacy.angelBlessing4=§5- 免疫掉落与挤压伤害
+tooltip.enigmaticlegacy.angelBlessing5=§5- §6
+tooltip.enigmaticlegacy.angelBlessing5_1=§d 概率§5 偏转弹射物
+tooltip.enigmaticlegacy.angelBlessing6=§5- 你的弹射物将获得速度加成
+tooltip.enigmaticlegacy.angelBlessing7=§5- 你可以在空中使用跳跃键
+tooltip.enigmaticlegacy.angelBlessing8=§5  激活你的主动技能
+tooltip.enigmaticlegacy.angelBlessing9=§5- 你受到 §6凋零 §5 和 §6虚空 §5的伤害增加
+
+tooltip.enigmaticlegacy.theTwist1=§5在这条弃绝凡尘的道路上，
+tooltip.enigmaticlegacy.theTwist2=§5没有比这更好的知晓方式了...
+tooltip.enigmaticlegacy.theTwist3=§5对 Boss 和玩家：
+tooltip.enigmaticlegacy.theTwist4=§d修正§6第四诅咒§d：
+tooltip.enigmaticlegacy.theTwist5=§d- 始终造成全额伤害
+tooltip.enigmaticlegacy.theTwist6=§5 对Boss和玩家的§d伤害
+tooltip.enigmaticlegacy.theTwist7=§d 击退§5
+
+tooltip.enigmaticlegacy.cursedRing1=§5一旦佩戴，它便成为你的一部分
+tooltip.enigmaticlegacy.cursedRing2=§4这枚戒指将永远陪伴着你
+tooltip.enigmaticlegacy.cursedRing2_creative=§6需要神的能力才能取下它
+tooltip.enigmaticlegacy.cursedRing3=§d七个诅咒将会降临到佩戴者身上：
+tooltip.enigmaticlegacy.cursedRing4=§5- 使受到的§6任何§5来源的伤害加倍
+tooltip.enigmaticlegacy.cursedRing4_alt=§5- 使受到的§6任何§5来源的伤害变化为原先的 §6
+tooltip.enigmaticlegacy.cursedRing5=§5- 中立生物会主动攻击你
+tooltip.enigmaticlegacy.cursedRing6=§5- 盔甲效力降低 §6
+tooltip.enigmaticlegacy.cursedRing6_1=
+tooltip.enigmaticlegacy.cursedRing7=§5- 你对怪物的伤害降低 §6
+tooltip.enigmaticlegacy.cursedRing7_1=
+tooltip.enigmaticlegacy.cursedRing8=§5- 一旦着火，火焰将会永远灼烧着你
+tooltip.enigmaticlegacy.cursedRing9=§5- 每次死亡都会使你的灵魂破裂
+tooltip.enigmaticlegacy.cursedRing10=§5- 无药可医的失眠症困扰着你
+tooltip.enigmaticlegacy.cursedRing11=§d而那些坚韧顽强之人，将会被给予七个祝福：
+tooltip.enigmaticlegacy.cursedRing12=§5- §6+
+tooltip.enigmaticlegacy.cursedRing12_1=§d 时运等级
+tooltip.enigmaticlegacy.cursedRing13=§5- §6+
+tooltip.enigmaticlegacy.cursedRing13_1=§d 掠夺等级
+tooltip.enigmaticlegacy.cursedRing14=§5- §6+
+tooltip.enigmaticlegacy.cursedRing14_1=§5 §d经验§5 掉落
+tooltip.enigmaticlegacy.cursedRing15=§5- §6+
+tooltip.enigmaticlegacy.cursedRing15_1=§5在附魔台中的§d附魔能力
+tooltip.enigmaticlegacy.cursedRing16=§5- 一些生物开始产出独特掉落物
+tooltip.enigmaticlegacy.cursedRing17=§5- 可以随时打开你的§6末影箱
+tooltip.enigmaticlegacy.cursedRing18=§5- 你可以使用独特的物品
+
+tooltip.enigmaticlegacy.OblivionStoneCtrlTooltip=§5按住 §6Ctrl§5 查看可消耗物品。
+tooltip.enigmaticlegacy.OblivionStone1=§5在合成栏中与任意物品合成
+tooltip.enigmaticlegacy.OblivionStone2=§5以允许其消耗此物品
+tooltip.enigmaticlegacy.OblivionStone2_more=§5或单独放入合成以清空列表
+tooltip.enigmaticlegacy.OblivionStone3=§5按 §6右键§5 切换模式，
+tooltip.enigmaticlegacy.OblivionStone4=§5按 §6Shift§5+§6右键
+tooltip.enigmaticlegacy.OblivionStone5=§5激活或停用
+tooltip.enigmaticlegacy.OblivionStone6=§5在 §6全面吸收§5 模式下
+tooltip.enigmaticlegacy.OblivionStone7=§5会消耗你背包内所有指定的物品
+tooltip.enigmaticlegacy.OblivionStone8=§5直到没有指定的物品剩余
+tooltip.enigmaticlegacy.OblivionStone9=§5在 §6保留一组§5 模式下
+tooltip.enigmaticlegacy.OblivionStone10=§5 每种类型的物品都会留下一组
+tooltip.enigmaticlegacy.OblivionStone11=§5会消耗超出这个数量的物品
+tooltip.enigmaticlegacy.OblivionStone12=§5在 §6过量吸收§5 模式下
+tooltip.enigmaticlegacy.OblivionStone13=§5只有在背包已满时
+tooltip.enigmaticlegacy.OblivionStone14=§5才会消耗指定的物品
+tooltip.enigmaticlegacy.OblivionStone15=§5
+tooltip.enigmaticlegacy.OblivionStoneCtrlList=§5可消耗物品列表：
+tooltip.enigmaticlegacy.OblivionStoneMode=§6当前模式：
+tooltip.enigmaticlegacy.OblivionMode0=§d全面吸收
+tooltip.enigmaticlegacy.OblivionMode1=§d保留一组
+tooltip.enigmaticlegacy.OblivionMode2=§d过量吸收
+tooltip.enigmaticlegacy.OblivionStoneDeactivated=§d已停用
+
+tooltip.enigmaticlegacy.enderRing1=§5允许你用绑定按键或
+tooltip.enigmaticlegacy.enderRing2=§5物品栏开启§6末影箱§5
+
+tooltip.enigmaticlegacy.currentKeybind=§6绑定按键：§d
+
+tooltip.enigmaticlegacy.magnetRing1=§5吸引§6
+tooltip.enigmaticlegacy.magnetRing1_1=§6§5个方块内的物品
+tooltip.enigmaticlegacy.magnetRing2=§5按住 §6Shift§5 时停用
+tooltip.enigmaticlegacy.magnetRing2_alt=§5按住 §6Shift§5 时生效
+
+tooltip.enigmaticlegacy.superMagnetRing1=§5立即收集掉落物
+tooltip.enigmaticlegacy.superMagnetRing2=§5范围：§6
+tooltip.enigmaticlegacy.superMagnetRing2_2=§6§5个方块
+tooltip.enigmaticlegacy.superMagnetRing3=§5按住 §6Shift§5 时停用
+tooltip.enigmaticlegacy.superMagnetRing3_alt=§5按住 §6Shift§5 时生效
+
+tooltip.enigmaticlegacy.miningCharm1=§6+
+tooltip.enigmaticlegacy.miningCharm1_1=§d 挖掘速度
+tooltip.enigmaticlegacy.miningCharm2=§6+
+tooltip.enigmaticlegacy.miningCharm2_1=§d 时运等级
+tooltip.enigmaticlegacy.miningCharm3=§5当你在地下时，
+tooltip.enigmaticlegacy.miningCharm4=§5给予你§6夜视§5效果
+tooltip.enigmaticlegacy.miningCharm5=§5该效果可通过将护符
+tooltip.enigmaticlegacy.miningCharm6=§5拿在手上§6右击§5关闭
+tooltip.enigmaticlegacy.miningCharmNightVision=§d夜视：
+
+tooltip.enigmaticlegacy.monsterCharm1=§6+
+tooltip.enigmaticlegacy.monsterCharm1_1=§5对亡灵生物的§d伤害
+tooltip.enigmaticlegacy.monsterCharm2=§6+
+tooltip.enigmaticlegacy.monsterCharm2_1=§5对其他敌对生物的§d伤害
+tooltip.enigmaticlegacy.monsterCharm3=§6+1 §d抢夺等级
+tooltip.enigmaticlegacy.monsterCharm4=§5击杀怪物掉落双倍经验
+
+tooltip.enigmaticlegacy.berserk_emblem1=§d攻击伤害
+tooltip.enigmaticlegacy.berserk_emblem2=§d攻击速度
+tooltip.enigmaticlegacy.berserk_emblem3=§d移动速度
+tooltip.enigmaticlegacy.berserk_emblem4= §d伤害抗性
+tooltip.enigmaticlegacy.berserk_emblem5=§5这些效果将乘以你当前
+tooltip.enigmaticlegacy.berserk_emblem6=§5所损失的生命值百分比
+tooltip.enigmaticlegacy.berserk_emblem7=§d当前效果：
+tooltip.enigmaticlegacy.berserk_emblem8=§d攻击伤害
+tooltip.enigmaticlegacy.berserk_emblem9=§d攻击速度
+tooltip.enigmaticlegacy.berserk_emblem10=§d移动速度
+tooltip.enigmaticlegacy.berserk_emblem11=§d伤害抗性
+
+tooltip.enigmaticlegacy.etheriumArmor1=§5装备时不可见
+tooltip.enigmaticlegacy.etheriumHelmet1=§5装备时不可见
+tooltip.enigmaticlegacy.etheriumChestplate1=§5装备时不可见
+tooltip.enigmaticlegacy.etheriumLeggings1=§5装备时不可见
+tooltip.enigmaticlegacy.etheriumBoots1=§5装备时不可见
+tooltip.enigmaticlegacy.etheriumArmorSetBonus1=§d套装效果：
+tooltip.enigmaticlegacy.etheriumArmorSetBonus2=§5- 当你的生命值低于 §6
+tooltip.enigmaticlegacy.etheriumArmorSetBonus2_1=§5 时
+tooltip.enigmaticlegacy.etheriumArmorSetBonus3=§5  生成一个强力护盾并会反弹大部分弹射物
+tooltip.enigmaticlegacy.etheriumArmorSetBonus4=§5  提供 §6
+tooltip.enigmaticlegacy.etheriumArmorSetBonus4_1=§6 伤害抗性§5
+tooltip.enigmaticlegacy.etheriumArmorSetBonus5=§5  击退攻击你的生物
+tooltip.enigmaticlegacy.etheriumArmorSetBonus6=§5
+
+tooltip.enigmaticlegacy.etheriumPickaxe1=§5挖掘 §63*3*1§5 的区域
+tooltip.enigmaticlegacy.etheriumPickaxe2=§6潜行§5时不生效
+tooltip.enigmaticlegacy.etheriumPickaxe3=§6潜行状态下右击§5可以切换开关
+
+tooltip.enigmaticlegacy.etheriumAxe1=§5§5挖掘 §63*3*1§5 的区域的木头与树叶.
+tooltip.enigmaticlegacy.etheriumAxe2=§6潜行§5时不生效
+tooltip.enigmaticlegacy.etheriumAxe3=§6潜行状态下右击§5可以切换开关
+
+tooltip.enigmaticlegacy.etheriumShovel1=§5挖掘 §63*3*1§5 的区域
+tooltip.enigmaticlegacy.etheriumShovel2=§6潜行§5时不生效
+tooltip.enigmaticlegacy.etheriumShovel3=§6潜行状态下右击§5可以切换开关
+
+tooltip.enigmaticlegacy.etheriumSword1=§5手持这把剑时
+tooltip.enigmaticlegacy.etheriumSword2=§5右击即可将你抛掷向
+tooltip.enigmaticlegacy.etheriumSword3=§5你视线的相反方向
+tooltip.enigmaticlegacy.etheriumSword4=§5冷却时间为§6
+tooltip.enigmaticlegacy.etheriumSword4_1=§5秒
+tooltip.enigmaticlegacy.etheriumSword5=§6潜行状态下右击§5可以切换开关
+
+tooltip.enigmaticlegacy.astralBreaker1=§5破坏 §63*3*1§5 的区域
+tooltip.enigmaticlegacy.astralBreaker2=§6潜行§5时不生效
+tooltip.enigmaticlegacy.astralBreaker3=§6潜行状态下右击§5可以切换开关
+tooltip.enigmaticlegacy.astralBreaker4=§5对大多数方块有效
+
+tooltip.enigmaticlegacy.megaSponge1=§5在你进入水中的时候
+tooltip.enigmaticlegacy.megaSponge2=§5瞬间吸收小范围内的水
+
+tooltip.enigmaticlegacy.witheritescrap1=§5有机会从
+tooltip.enigmaticlegacy.witheritescrap2=§5凋灵骷髅身上掉落
+
+tooltip.enigmaticlegacy.witherite1=§5虚弱状态下
+tooltip.enigmaticlegacy.witherite2=§5杀死凋灵
+tooltip.enigmaticlegacy.witherite3=§5来获得
+
+tooltip.enigmaticlegacy.enchanterPearl1=§5当装备或放在物品栏时
+tooltip.enigmaticlegacy.enchanterPearl2=§5若你去使用§6附魔台
+tooltip.enigmaticlegacy.enchanterPearl3=§5你所获得的附魔数量会更多，且等级更高
+tooltip.enigmaticlegacy.enchanterPearl4=§5并有机会出现
+tooltip.enigmaticlegacy.enchanterPearl5=§d诅咒与宝藏附魔
+tooltip.enigmaticlegacy.enchanterPearl6=§5附魔操作不再需要§6青金石
+
+tooltip.enigmaticlegacy.cursedStone1=§5带上此石头前往§6下界
+tooltip.enigmaticlegacy.cursedStone2=§5并在一个足够大的熔岩湖中结束自己的生命
+tooltip.enigmaticlegacy.cursedStone3=§5你所佩戴的§6七咒之戒§5与你的
+tooltip.enigmaticlegacy.cursedStone4=§5任一§6灵魂水晶
+tooltip.enigmaticlegacy.cursedStone5=§5将会被一同永久摧毁
+tooltip.enigmaticlegacy.cursedStone6=§4此操作无法撤销
+
+tooltip.enigmaticlegacy.infinimeal1=§5作用类似于无限§6骨粉§5
+tooltip.enigmaticlegacy.infinimeal2=§5可以作用于§6仙人掌§5、§6藤蔓
+tooltip.enigmaticlegacy.infinimeal3=§6下界疣§5和§6甘蔗
+
+tooltip.enigmaticlegacy.animalGuide1=§5当装备在对应饰品栏位时
+tooltip.enigmaticlegacy.animalGuide2=§5你的攻击不会伤害动物
+tooltip.enigmaticlegacy.animalGuide3=§d修正§6第二诅咒§d：
+tooltip.enigmaticlegacy.animalGuide4=§5- 可驯服的生物对你保持中立
+
+tooltip.enigmaticlegacy.cursed_scroll1= §d攻击伤害
+tooltip.enigmaticlegacy.cursed_scroll2= §d挖掘速度
+tooltip.enigmaticlegacy.cursed_scroll3= §d生命回复
+tooltip.enigmaticlegacy.cursed_scroll4=§5这些效果将乘以你所有
+tooltip.enigmaticlegacy.cursed_scroll5=§5装备物品中诅咒附魔的数量
+tooltip.enigmaticlegacy.cursed_scroll6=§d当前效果：
+tooltip.enigmaticlegacy.cursed_scroll7= §d攻击伤害
+tooltip.enigmaticlegacy.cursed_scroll8= §d挖掘速度
+tooltip.enigmaticlegacy.cursed_scroll9= §d生命回复
+
+tooltip.enigmaticlegacy.xpTome1=§5可以存储无限量的经验
+tooltip.enigmaticlegacy.xpTome2=§5拿着的时候按住§6Shift§5 + §6并右击
+tooltip.enigmaticlegacy.xpTome3=§5来切换激活状态
+tooltip.enigmaticlegacy.xpTome4=§5按下§6右键§5可以切换模式
+tooltip.enigmaticlegacy.xpTome5=§5在§6吸收§5模式下，且卷轴装备在了卷轴栏里
+tooltip.enigmaticlegacy.xpTome6=§5它便会吸收你的经验。
+tooltip.enigmaticlegacy.xpTome7=§5而§6释放§5模式则相反，
+tooltip.enigmaticlegacy.xpTome8=§5它会将所有储存在内的
+tooltip.enigmaticlegacy.xpTome9=§5经验返还给你。
+tooltip.enigmaticlegacy.xpTome10=§5当激活时，自动收集
+tooltip.enigmaticlegacy.xpTome11=§6§5个方块距离内的经验球
+tooltip.enigmaticlegacy.xpTomeMode=§d模式：
+tooltip.enigmaticlegacy.xpTomeExp=§d储存的经验：
+tooltip.enigmaticlegacy.xpTomeUnits=§6点，或
+tooltip.enigmaticlegacy.xpTomeLevels=§6级
+tooltip.enigmaticlegacy.xpTomeAbsorption=§6吸收
+tooltip.enigmaticlegacy.xpTomeExtraction=§6释放
+tooltip.enigmaticlegacy.xpTomeDeactivated=§6已停用
+
+tooltip.enigmaticlegacy.enchantmentTransposer1=§5在合成栏中与附魔物品合成时
+tooltip.enigmaticlegacy.enchantmentTransposer2=§5会将目标物品的附魔转移到自身
+tooltip.enigmaticlegacy.enchantmentTransposer3=§5自身则会变成对应的§6附魔书§5
+
+tooltip.enigmaticlegacy.golemHeart1=§d主动技能：
+tooltip.enigmaticlegacy.golemHeart2=§4- 无
+tooltip.enigmaticlegacy.golemHeartCooldown=§d冷却：§660§6 秒
+tooltip.enigmaticlegacy.golemHeart3=§d被动效果：
+tooltip.enigmaticlegacy.golemHeart4=§5- §6+
+tooltip.enigmaticlegacy.golemHeart4_1=§d 护甲点数
+tooltip.enigmaticlegacy.golemHeart5=§5- 如果你不穿任何护甲，则
+tooltip.enigmaticlegacy.golemHeart6=§5  §6+
+tooltip.enigmaticlegacy.golemHeart6_1=§d 护甲点数§5，§6+
+tooltip.enigmaticlegacy.golemHeart6_2=§d 护甲韧性
+tooltip.enigmaticlegacy.golemHeart7=§5  §6+
+tooltip.enigmaticlegacy.golemHeart7_1=§d 爆炸伤害抗性
+tooltip.enigmaticlegacy.golemHeart8=§5  §6+
+tooltip.enigmaticlegacy.golemHeart8_1=§d 近战伤害抗性
+tooltip.enigmaticlegacy.golemHeart9=§5  §6+
+tooltip.enigmaticlegacy.golemHeart9_1=§d 击退抗性
+tooltip.enigmaticlegacy.golemHeart10=§5- 免疫挤压和荆棘伤害
+tooltip.enigmaticlegacy.golemHeart11=§5- 受到的 §6魔法伤害§5 增加
+
+tooltip.enigmaticlegacy.oceanStone1=§d主动技能：
+tooltip.enigmaticlegacy.oceanStone2=§6- 消耗大量经验召唤雷暴
+tooltip.enigmaticlegacy.oceanStone3=§6
+tooltip.enigmaticlegacy.oceanStoneCooldown=§d冷却：§660§6 秒
+tooltip.enigmaticlegacy.oceanStone4=§d被动效果：
+tooltip.enigmaticlegacy.oceanStone5=§5- 获得对水生生物
+tooltip.enigmaticlegacy.oceanStone5_1=§6§5的伤害抗性
+tooltip.enigmaticlegacy.oceanStone6=§5- 你能够在水下呼吸
+tooltip.enigmaticlegacy.oceanStone7=§5- 在水中获得§6夜视§5效果
+tooltip.enigmaticlegacy.oceanStone8=§5- 获得§6水下速掘§5附魔效果
+tooltip.enigmaticlegacy.oceanStone9=§5- 在水下时抵消重力
+tooltip.enigmaticlegacy.oceanStone10=§5- 大幅提高游泳速度
+tooltip.enigmaticlegacy.oceanStone11=§5- 增加受到的§6火焰伤害
+
+tooltip.enigmaticlegacy.voidPearl1=§d主动技能：
+tooltip.enigmaticlegacy.voidPearl2=§4- 无
+tooltip.enigmaticlegacy.voidPearlCooldown=§d冷却：§660§6 秒
+tooltip.enigmaticlegacy.voidPearl3=§d被动效果：
+tooltip.enigmaticlegacy.voidPearl4=§5- 你不会感到饥饿
+tooltip.enigmaticlegacy.voidPearl5=§5  但生命恢复很慢
+tooltip.enigmaticlegacy.voidPearl6=§5- 不再需要呼吸空气
+tooltip.enigmaticlegacy.voidPearl7=§5- 免疫任何状态效果
+tooltip.enigmaticlegacy.voidPearl8=§5- 你的攻击会造成§6凋零§5效果
+tooltip.enigmaticlegacy.voidPearl9=§5- 任何靠近你的生物
+tooltip.enigmaticlegacy.voidPearl10=§5  如果他们处于黑暗中
+tooltip.enigmaticlegacy.voidPearl11=§5  则会受到大量伤害和严重的负面效果
+tooltip.enigmaticlegacy.voidPearl12=§5  §6飞行生物§5会无视天空光照等级而受到影响
+tooltip.enigmaticlegacy.voidPearl13=§5- §6
+tooltip.enigmaticlegacy.voidPearl13_1=§d 概率§5抵抗致命伤害
+tooltip.enigmaticlegacy.voidPearl14=§5
+
+tooltip.enigmaticlegacy.add=§6+
+
+key.spellstoneAbility=术石能力激活
+
+tooltip.enigmaticlegacy.aoeDisabled=§c区域效果已关闭
+tooltip.enigmaticlegacy.abilityDisabled=§c特殊技能已关闭
+
+tooltip.enigmaticlegacy.tainted1=§5被受诅咒之存在轻微污染了
+tooltip.enigmaticlegacy.tainted2=§5被受诅咒之存在污染了
+
+tooltip.enigmaticlegacy.enabled=§6启用
+tooltip.enigmaticlegacy.disabled=§6停用
+
+tooltip.enigmaticlegacy.cursedOnesOnly1=承受七咒之人，
+tooltip.enigmaticlegacy.cursedOnesOnly2=才能使用该物品
+
+tooltip.enigmaticlegacy.soulCrystal1=§6右击§5吸收水晶，
+tooltip.enigmaticlegacy.soulCrystal2=§5并恢复一颗破碎的§6灵魂水晶
+
+#1.18+
+potion.blazing_strength=耀炎之力
+potion.growing_hunger=饥饿渐涨
+
+tooltip.enigmaticlegacy.soulCompass1=§5它会指向最近的§6灵魂水晶
+
+tooltip.enigmaticlegacy.enigmaticEye1=§5它链接于凌驾时空之地
+tooltip.enigmaticlegacy.enigmaticEye2=§5你可以冒着引起某人……或某物注意的风险唤醒它
+tooltip.enigmaticlegacy.enigmaticEye3=§5
+
+tooltip.enigmaticlegacy.enigmaticEyeAwakened1=§5现在你引起了§d祂§5的注意
+tooltip.enigmaticlegacy.enigmaticEyeAwakened2=§5没人知道是谁在使用这个眼睛来观察你和你身处的世界
+tooltip.enigmaticlegacy.enigmaticEyeAwakened3=§5但可以确定的是似乎其并没有表现出与你建立联系的意图
+tooltip.enigmaticlegacy.enigmaticEyeAwakened4=§d祂§5是由于没有能力的缘故还是仅仅不想与你建立非精神的联系？
+tooltip.enigmaticlegacy.enigmaticEyeAwakened5=§5这个问题依旧有待解答……
+tooltip.enigmaticlegacy.enigmaticEyeAwakened6=§5显示装备§6迷人徽章§5的玩家的真名
+
+tooltip.enigmaticlegacy.infernalShield1=§6装备时：
+tooltip.enigmaticlegacy.infernalShield2=§5- 在你着火时熄灭身上的火焰
+tooltip.enigmaticlegacy.infernalShield3=§6格挡时：
+tooltip.enigmaticlegacy.infernalShield4=§5- 举盾之后可立即格挡伤害
+tooltip.enigmaticlegacy.infernalShield5=§5- 可以格挡§6穿透§5弩射出的箭
+tooltip.enigmaticlegacy.infernalShield6=§5- 使一般的破盾能力对其无效
+tooltip.enigmaticlegacy.infernalShield7=§5- 格挡近战伤害后点燃攻击者
+tooltip.enigmaticlegacy.infernalShield8=§5- 成功格挡攻击后会获得§6耀炎之力§5
+tooltip.enigmaticlegacy.infernalShield9=§5  但受到任何伤害后立即失去此效果
+tooltip.enigmaticlegacy.infernalShield10=§5- 来自背后的攻击伤害增加§650%%
+tooltip.enigmaticlegacy.infernalShield11=§5
+
+tooltip.enigmaticlegacy.theInfinitum1=§5当你凝视深渊的时候，深渊也在……凝视你
+tooltip.enigmaticlegacy.theInfinitum2=§5修正§6第四诅咒§5：
+tooltip.enigmaticlegacy.theInfinitum3=§5- 始终造成全额伤害
+tooltip.enigmaticlegacy.theInfinitum4= §5 对Boss和玩家的§d伤害
+tooltip.enigmaticlegacy.theInfinitum5= §d 击退
+tooltip.enigmaticlegacy.theInfinitum6= §d 吸血
+tooltip.enigmaticlegacy.theInfinitum7=§5可以附上大部分剑的附魔
+tooltip.enigmaticlegacy.theInfinitum8=§5每次攻击都会施加强大的负面效果
+tooltip.enigmaticlegacy.theInfinitum9=§5持有时有 §6
+tooltip.enigmaticlegacy.theInfinitum9_1=§5 几率§d免疫致命伤害
+tooltip.enigmaticlegacy.theInfinitum10=§5
+
+tooltip.enigmaticlegacy.worthyOnesOnly1=§5获得使用这种物品的资格需要付出极大的牺牲：
+tooltip.enigmaticlegacy.worthyOnesOnly2=§5你必须在自来到世界以来 §699.5%%§5 的时间
+tooltip.enigmaticlegacy.worthyOnesOnly3=§5都在七咒的折磨下度过
+tooltip.enigmaticlegacy.worthyOnesOnly4=目前这段时间的占比为：
+
+tooltip.enigmaticlegacy.eldritchPan1=§d修正§6第四诅咒§d：
+tooltip.enigmaticlegacy.eldritchPan2=§d- 始终造成全额伤害
+tooltip.enigmaticlegacy.eldritchPan3=§d 生命偷取
+tooltip.enigmaticlegacy.eldritchPan4=§d 饥饿偷取
+tooltip.enigmaticlegacy.eldritchPan4_alt=§d饥饿偷取（转化为生命）
+tooltip.enigmaticlegacy.eldritchPan5=§5能烹饪被杀死的生物的肉
+tooltip.enigmaticlegacy.eldritchPan6=§5可以用作盾牌，并在格挡时吞噬投射物
+tooltip.enigmaticlegacy.eldritchPan7=§5持有它会赋予你§6饥饿渐涨§5效果，
+tooltip.enigmaticlegacy.eldritchPan8=§5使你更饥饿，但更强大
+tooltip.enigmaticlegacy.eldritchPan7_alt=§5持有它会赋予你§6血怒渐涨§5效果，
+tooltip.enigmaticlegacy.eldritchPan8_alt=§5使你失去生命，但获得力量和生命偷取
+tooltip.enigmaticlegacy.eldritchPan8p_alt=§5此效果不会杀死你
+tooltip.enigmaticlegacy.eldritchPan9=§5每用它杀死一种新的生物，都会使其永久获得
+tooltip.enigmaticlegacy.eldritchPan10=§d伤害§5和
+tooltip.enigmaticlegacy.eldritchPan10_1=§d护甲
+tooltip.enigmaticlegacy.eldritchPanLore1=§5原始饥饿的具象化
+tooltip.enigmaticlegacy.eldritchPanKills1=§d独特击杀数：
+tooltip.enigmaticlegacy.eldritchPanKillsMax=§6它已满足..……但你还没有
+
+tooltip.enigmaticlegacy.eldritchAmulet1=§5当你死亡时，你将保留你的物品栏
+tooltip.enigmaticlegacy.eldritchAmulet2=§5但§6经验§5与§6灵魂碎片
+tooltip.enigmaticlegacy.eldritchAmulet3=§5将会正常失去
+tooltip.enigmaticlegacy.eldritchAmulet4=§5你所注视的生物将会受到
+tooltip.enigmaticlegacy.eldritchAmulet5=§5缓慢与虚弱效果的折磨
+
+tooltip.enigmaticlegacy.desolationRing1=§6铁傀儡§5, §6末影人§5 和 §6僵尸猪人§5
+tooltip.enigmaticlegacy.desolationRing2=§5不会在你身边生成
+
+#Misc
+itemGroup.tabEnigmaticLegacy=神秘²遗物
+button.enderChest=末影箱
+key.categories.enigmaticlegacy=神秘²遗物
+key.enderRing=打开末影箱
+message.enigmaticlegacy.eldritch_pan_buff=品尝了这份新的灵魂之后，饕餮之锅变得更加强大
+
+#Compat
+tooltip.enigmaticlegacy.compatXat1=§d修正 §6'隐藏' 诅咒§d:
+tooltip.enigmaticlegacy.compatXat2=§5- 末影人不再远距离传送到你周围
+
+tooltip.enigmaticlegacy.compatXat3=§d修正 §6第七诅咒§d:
+tooltip.enigmaticlegacy.compatXat4=§5- 你可以正常入眠

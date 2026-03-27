@@ -2,8 +2,6 @@ package net.mx.eaddons.item;
 
 import net.minecraftforge.common.config.Configuration;
 
-import java.io.File;
-
 /** Config for Emblem of Adventurer and Insignia of Despair. */
 public class EmblemAdventurerConfig {
     // Emblem of Adventurer
@@ -15,9 +13,7 @@ public class EmblemAdventurerConfig {
     public static double despairMovementSpeedPercent = 5.0;
     public static double despairKnockbackResistancePercent = -5.0;
 
-    public static void init(File configDir) {
-        Configuration config = new Configuration(new File(configDir, "jmheaven_emblem_adventurer.cfg"));
-        config.load();
+    public static void init(Configuration config) {
 
         adventurerAttackDamage = config.getFloat("AdventurerAttackDamage", "EmblemOfAdventurer", 2.0F, 0, 256,
                 "Attack damage bonus when wearing Emblem of Adventurer.");
@@ -33,6 +29,6 @@ public class EmblemAdventurerConfig {
         despairKnockbackResistancePercent = config.getFloat("DespairKnockbackResistancePercent", "InsigniaOfDespair", -5.0F, -100, 0,
                 "Knockback resistance change (percentage, negative = less resistance) when wearing Insignia of Despair.");
 
-        if (config.hasChanged()) config.save();
+    
     }
 }

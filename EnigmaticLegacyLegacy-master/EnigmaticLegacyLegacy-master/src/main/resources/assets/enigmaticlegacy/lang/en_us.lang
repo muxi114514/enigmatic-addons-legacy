@@ -1,0 +1,644 @@
+#Blocks
+tile.astral_block.name=Sack of Astral Dust
+tile.etherium_block.name=Block of Etherium
+
+#bauble
+item.enigmatic_amulet.name=Enigmatic Amulet
+item.storage_crystal.name=Storage Crystal
+item.unwitnessed_amulet.name=Unwitnessed Amulet
+item.cursed_ring.name=Ring of Seven Curses
+item.cursed_stone.name=Unholy Stone
+item.soul_crystal.name=Soul Crystal
+item.iron_ring.name=Iron Ring
+item.gem_ring.name=Gem Ring
+item.ender_ring.name=Ring of Ender
+item.magnet_ring.name=Magnet Ring
+item.super_magnet_ring.name=Dislocation Ring
+item.monster_charm.name=Emblem of Monster Slayer
+item.mining_charm.name=Charm of Treasure Hunter
+item.berserk_emblem.name=Emblem of Bloodstained Valor
+item.mega_sponge.name=Mega Sponge
+item.enchanter_pearl.name=Enchanter's Pearl
+item.xp_scroll.name=Scroll of Ageless Wisdom
+item.cursed_scroll.name=Scroll of a Thousand Curses
+item.heaven_scroll.name=Gift of the Heaven
+item.fabulous_scroll.name=Grace of the Creator
+item.animal_guide.name=Guide to Animal Companionship
+item.ascension_amulet.name=Ascension Amulet
+item.enigmatic_eye_dormant.name=Dormant Eye
+item.enigmatic_eye_active.name=Inscrutable Eye
+item.eldritch_amulet.name=The Testament of Contempt
+item.desolation_ring.name=The Burden of Desolation
+
+#SpellStone
+item.golem_heart.name=Heart of the Golem
+item.ocean_stone.name=Will of the Ocean
+item.angel_blessing.name=Angel's Blessing
+item.magma_heart.name=Blazing Core
+item.eye_of_nebula.name=Eye of the Nebula
+item.void_pearl.name=Pearl of the Void
+
+#material
+item.astral_dust.name=Astral dust
+item.ender_rod.name=Ender Stick
+item.etherium_ore.name=Raw Etherium Ore
+item.etherium_ingot.name=Etherium Inogt
+item.earth_heart.name=Heart of The Earth
+item.twisted_core.name=Twisted Heart
+item.witherite_catalyst.name=Witherite Catalyst
+item.witherite_ingot.name=Witherite Ingot
+item.evil_essence.name=Nefarious Essence
+item.thicc_scroll.name=Thicc Scroll
+item.evil_ingot.name=Nefarious Ingot
+item.cosmic_heart.name=Heart of the Cosmos
+
+#armor & tools
+item.the_acknowledgment.name=The Acknowledgment
+item.the_twist.name=The Twist
+item.the_infinitum.name=The Infinitum
+item.abyssal_heart.name=Heart of the Abyssal
+item.etherium_helm.name=Etherium Helmet
+item.etherium_chest.name=Etherium Cuirass
+item.etherium_legs.name=Etherium Greaves
+item.etherium_boots.name=Etherium Boots
+item.etherium_pickaxe.name=Etherium Pickaxe
+item.etherium_axe.name=Etherium Waraxe
+item.etherium_spade.name=Etherium Shovel
+item.etherium_sword.name=Etherium Broadsword
+item.etherium_scythe.name=Etherium Scythe
+item.astral_breaker.name=Astral Breaker
+item.infinimeal.name=Essence of Raging Life
+item.infernal_shield.name=Bulwark of Blazing Pride
+item.enchantment_transposer.name=Tome of Hungering Knowledge
+item.eldritch_pan.name=The Voracious Pan
+item.void_stone.name=Keystone of The Oblivion
+item.forbidden_fruit.name=The Forbidden Fruit
+item.soul_compass.name=Wayfinder of the Damned
+item.extradimensional_eye.name=Extradimensional Eye
+item.unholy_grail.name=Unholy Grail
+item.redemption_potion.name=Potion of Redemption
+
+tooltip.enigmaticlegacy.holdShift=§5The §6Shift §5shall be held.
+
+tooltip.enigmaticlegacy.theAcknowledgment1=§5The blinding light of revelation shall
+tooltip.enigmaticlegacy.theAcknowledgment2=§5incinerate those who refuse to embrace it.
+
+tooltip.enigmaticlegacy.heavenTome1=§5Provides you an ability to fly within the range
+tooltip.enigmaticlegacy.heavenTome2=§5of an active §6Beacon§5, at the cost of slowly
+tooltip.enigmaticlegacy.heavenTome3=§5consuming your experience.
+tooltip.enigmaticlegacy.heavenTome4=§5Compensates mining speed penalty when flying.
+
+tooltip.enigmaticlegacy.fabulousScroll1=§5Provides you an ability to freely fly, at the
+tooltip.enigmaticlegacy.fabulousScroll2=§5cost of quickly consuming your experience.
+tooltip.enigmaticlegacy.fabulousScroll3=§5Experience consumption is completely negated
+tooltip.enigmaticlegacy.fabulousScroll4=§5within the range of an active §6Beacon§5.
+tooltip.enigmaticlegacy.fabulousScroll5=§5Compensates mining speed penalty when flying.
+
+tooltip.enigmaticlegacy.angelBlessing1=§dActive ability:
+tooltip.enigmaticlegacy.angelBlessing2=§6- Accelerates you in the direction of your sight.
+tooltip.enigmaticlegacy.angelBlessingCooldown=§dСooldown: §6
+tooltip.enigmaticlegacy.angelBlessingCooldown_1=§6 seconds
+tooltip.enigmaticlegacy.angelBlessing3=§dPassive abilities:
+tooltip.enigmaticlegacy.angelBlessing4=§5- Immunity to fall and collision damage.
+tooltip.enigmaticlegacy.angelBlessing5=§5- §6
+tooltip.enigmaticlegacy.angelBlessing5_1=§d Chance§5 to deflect incoming projectile.
+tooltip.enigmaticlegacy.angelBlessing6=§5- Your own projectiles are greatly accelerated.
+tooltip.enigmaticlegacy.angelBlessing7=§5- Active ability can be triggered by pressing jump
+tooltip.enigmaticlegacy.angelBlessing8=§5  key while in mid-air.
+tooltip.enigmaticlegacy.angelBlessing9=§5- You are vulnerable to §6Withering§5 and §6Void Damage§5.
+
+tooltip.enigmaticlegacy.blazingCore1=§dActive ability:
+tooltip.enigmaticlegacy.blazingCore2=§4- Absent.
+tooltip.enigmaticlegacy.blazingCoreCooldown=§dСooldown: §6
+tooltip.enigmaticlegacy.blazingCoreCooldown_1=§6 seconds
+tooltip.enigmaticlegacy.blazingCore3=§dPassive abilities:
+tooltip.enigmaticlegacy.blazingCore4=§5- Immunity to fire.
+tooltip.enigmaticlegacy.blazingCore5=§5- Temporary immunity to lava.
+tooltip.enigmaticlegacy.blazingCore6=§5- Burns those who attack you in melee.
+tooltip.enigmaticlegacy.blazingCore7=§5- Heavily improved visibility in lava.
+tooltip.enigmaticlegacy.blazingCore8=§5- Any status effects applied to you tick
+tooltip.enigmaticlegacy.blazingCore9=§5  down twice as fast, except §6Fire Resistance§5.
+tooltip.enigmaticlegacy.blazingCore10=§5- §6Fire Resistance§5 lasts twice as long.
+tooltip.enigmaticlegacy.blazingCore11=§5- You are vulnerable to underwater creatures.
+
+tooltip.enigmaticlegacy.eyeOfNebula1=§dActive ability:
+tooltip.enigmaticlegacy.eyeOfNebula2=§6- Teleports you behind creature you are looking at.
+tooltip.enigmaticlegacy.eyeOfNebulaCooldown=§dСooldown: §6%1$s§6 seconds
+tooltip.enigmaticlegacy.eyeOfNebula3=§dPassive abilities:
+tooltip.enigmaticlegacy.eyeOfNebula4=§5- §6%1$s§d Magic Damage Resistance.
+tooltip.enigmaticlegacy.eyeOfNebula5=§5- §6%1$s§d Chance§5 to teleport away from any attack.
+tooltip.enigmaticlegacy.eyeOfNebula6=§5- When in water, you are vulnerable to ANY damage.
+
+tooltip.enigmaticlegacy.extradimensionalEyeLocation=§dBound Location:
+tooltip.enigmaticlegacy.extradimensionalEyeX=§d- X: §6
+tooltip.enigmaticlegacy.extradimensionalEyeY=§d- Y: §6
+tooltip.enigmaticlegacy.extradimensionalEyeZ=§d- Z: §6
+tooltip.enigmaticlegacy.extradimensionalEyeDimension=§6Dimension: §5
+tooltip.enigmaticlegacy.overworld=§2Overworld
+tooltip.enigmaticlegacy.nether=§4The Nether
+tooltip.enigmaticlegacy.end=§5The End
+tooltip.enigmaticlegacy.extradimensionalEye1=§5Bind to desired location by pressing
+tooltip.enigmaticlegacy.extradimensionalEye2=§6Shift§5+§6Right-Click§5 while standing there.
+tooltip.enigmaticlegacy.extradimensionalEye3=§5You can then §6Left-Click§5 with it on a
+tooltip.enigmaticlegacy.extradimensionalEye4=§5living creature to teleport it to that
+tooltip.enigmaticlegacy.extradimensionalEye5=§5location, as long as it resides in the
+tooltip.enigmaticlegacy.extradimensionalEye6=§5same dimension.
+tooltip.enigmaticlegacy.extradimensionalEye7=§6Vanishes after being used.
+
+tooltip.enigmaticlegacy.theTwist1=§5On a path to take it all away,
+tooltip.enigmaticlegacy.theTwist2=§5there can be no better way of knowing...
+tooltip.enigmaticlegacy.theTwist3=§5Against bosses and players:
+tooltip.enigmaticlegacy.theTwist4=§dAlteration of the §6Fourth Curse§5:
+tooltip.enigmaticlegacy.theTwist5=§5- Always deals it's full damage.
+tooltip.enigmaticlegacy.theTwist6=§d Damage§5 against bosses and players.
+tooltip.enigmaticlegacy.theTwist7=§d Knockback§5
+
+tooltip.enigmaticlegacy.cursedRing1=§5Once worn, it becomes a part of you.
+tooltip.enigmaticlegacy.cursedRing2=§4This ring will persist with you forever.
+tooltip.enigmaticlegacy.cursedRing2_creative=§6With the power of god, you can unequip it.
+tooltip.enigmaticlegacy.cursedRing3=§dSeven curses will befall whoever bears it:
+tooltip.enigmaticlegacy.cursedRing4=§5- You receive double damage from §6ANY§5 source.
+tooltip.enigmaticlegacy.cursedRing4_alt=§5- You receive §6%换§5 damage from §6ANY§5 source.
+tooltip.enigmaticlegacy.cursedRing5=§5- Neutral creatures are aggresive towards you.
+tooltip.enigmaticlegacy.cursedRing6=§5- Armor is §6
+tooltip.enigmaticlegacy.cursedRing6_1=§5 less effective.
+tooltip.enigmaticlegacy.cursedRing7=§5- Monsters receive §6
+tooltip.enigmaticlegacy.cursedRing7_1=§5 less damage from you.
+tooltip.enigmaticlegacy.cursedRing8=§5- When on fire, you burn forever.
+tooltip.enigmaticlegacy.cursedRing9=§5- Every death tears your soul apart.
+tooltip.enigmaticlegacy.cursedRing10=§5- You suffer from incurable insomnia.
+tooltip.enigmaticlegacy.cursedRing11=§dSeven blessings will reward those who withstand:
+tooltip.enigmaticlegacy.cursedRing12=§5- §6+
+tooltip.enigmaticlegacy.cursedRing12_1=§d Fortune Level
+tooltip.enigmaticlegacy.cursedRing13=§5- §6+
+tooltip.enigmaticlegacy.cursedRing13_1=§d Looting Level
+tooltip.enigmaticlegacy.cursedRing14=§5- §6+
+tooltip.enigmaticlegacy.cursedRing14_1=§5 §dExperience§5 dropped.
+tooltip.enigmaticlegacy.cursedRing15=§5- §6+
+tooltip.enigmaticlegacy.cursedRing15_1=§d Enchanting Power§5 in §6Enchanting Table.
+tooltip.enigmaticlegacy.cursedRing16=§5- Unique drops from some creatures.
+tooltip.enigmaticlegacy.cursedRing17=§5- Portability of §6Ender Chest.
+tooltip.enigmaticlegacy.cursedRing18=§5- You can create and use unique items.
+
+tooltip.enigmaticlegacy.forbiddenFruitLore=§5Knowledge is the greatest gift.
+tooltip.enigmaticlegacy.forbiddenFruit1=§5After consuming the fruit you shall never
+tooltip.enigmaticlegacy.forbiddenFruit2=§5experience hunger again, but any form of
+tooltip.enigmaticlegacy.forbiddenFruit3=§5regeneration will have §6%1$s§5 weaker effect.
+
+tooltip.enigmaticlegacy.OblivionStoneCtrlTooltip=§5Hold §6Ctrl§5 to see consumable items.
+tooltip.enigmaticlegacy.OblivionStone1=§5Combine with any item in crafting grid
+tooltip.enigmaticlegacy.OblivionStone2=§5to allow it consuming this item, or with
+tooltip.enigmaticlegacy.OblivionStone2_more=§5nothing to clear the list.
+tooltip.enigmaticlegacy.OblivionStone3=§5Press §6Right-Click§5 to switch modes.
+tooltip.enigmaticlegacy.OblivionStone4=§5Press §6Shift§5+§6Right-Click§5 to activate
+tooltip.enigmaticlegacy.OblivionStone5=§5or deactivate it completely.
+tooltip.enigmaticlegacy.OblivionStone6=§5In §6Total Absorption§5 mode, keystone
+tooltip.enigmaticlegacy.OblivionStone7=§5consumes all specified items within
+tooltip.enigmaticlegacy.OblivionStone8=§5your inventory, until none left.
+tooltip.enigmaticlegacy.OblivionStone9=§5In §6Last Stack§5 mode, it will always leave
+tooltip.enigmaticlegacy.OblivionStone10=§5one stack of each type of item, but will
+tooltip.enigmaticlegacy.OblivionStone11=§5consume anything more than that.
+tooltip.enigmaticlegacy.OblivionStone12=§5In §6Excess Absorption§5 mode, it will only
+tooltip.enigmaticlegacy.OblivionStone13=§5consume anything if you have no free
+tooltip.enigmaticlegacy.OblivionStone14=§5space in your inventory, and only until
+tooltip.enigmaticlegacy.OblivionStone15=§5it appears.
+
+tooltip.enigmaticlegacy.OblivionStoneCtrlList=§5List of consumable items:
+tooltip.enigmaticlegacy.OblivionStoneMode=§6Current Mode:
+tooltip.enigmaticlegacy.OblivionMode0=§dTotal Absorption
+tooltip.enigmaticlegacy.OblivionMode1=§dLast Stack
+tooltip.enigmaticlegacy.OblivionMode2=§dExcess Absorption
+tooltip.enigmaticlegacy.OblivionStoneDeactivated=§dDeactivated
+
+tooltip.enigmaticlegacy.enderRing1=§5Allows you to remotely acess your
+tooltip.enigmaticlegacy.enderRing2=§6Ender Chest§5, via inventory or keybind.
+
+tooltip.enigmaticlegacy.currentKeybind=§6Current Keybind: §d
+
+tooltip.enigmaticlegacy.magnetRing1=§5Attracts items within §6
+tooltip.enigmaticlegacy.magnetRing1_1=§6 blocks§5 radius.
+tooltip.enigmaticlegacy.magnetRing2=§5This can be disabled by holding §6Shift§5.
+tooltip.enigmaticlegacy.magnetRing2_alt=§5Only takes effect when holding §6Shift§5.
+
+tooltip.enigmaticlegacy.superMagnetRing1=§5Instantly collects any dropped items
+tooltip.enigmaticlegacy.superMagnetRing2=§5within §6
+tooltip.enigmaticlegacy.superMagnetRing2_2=§6 blocks§5 radius.
+tooltip.enigmaticlegacy.superMagnetRing3=§5This can be disabled by holding §6Shift§5.
+tooltip.enigmaticlegacy.superMagnetRing3_alt=§5Only takes effect when holding §6Shift§5.
+
+tooltip.enigmaticlegacy.miningCharm1=§6+
+tooltip.enigmaticlegacy.miningCharm1_1=§d Mining Speed
+tooltip.enigmaticlegacy.miningCharm2=§6+
+tooltip.enigmaticlegacy.miningCharm2_1=§d Fortune Level
+tooltip.enigmaticlegacy.miningCharm3=§5When you are underground and in dark,
+tooltip.enigmaticlegacy.miningCharm4=§5applies §6Night Vision§5 effect to you. This
+tooltip.enigmaticlegacy.miningCharm5=§5feature can be disabled by pressing
+tooltip.enigmaticlegacy.miningCharm6=§5the §6Right-Click§5 when holding charm.
+tooltip.enigmaticlegacy.miningCharmNightVision=§dNight Vision:
+
+tooltip.enigmaticlegacy.monsterCharm1=§6+
+tooltip.enigmaticlegacy.monsterCharm1_1=§d Damage§5 against undead creatures.
+tooltip.enigmaticlegacy.monsterCharm2=§6+
+tooltip.enigmaticlegacy.monsterCharm2_1=§d Damage§5 against other aggressive creatures.
+tooltip.enigmaticlegacy.monsterCharm3=§6+1 §dLooting Level
+tooltip.enigmaticlegacy.monsterCharm4=§5Slain monsters drop double as much experience.
+
+tooltip.enigmaticlegacy.berserk_emblem1= §dAttack Damage
+tooltip.enigmaticlegacy.berserk_emblem2= §dAttack Speed
+tooltip.enigmaticlegacy.berserk_emblem3= §dMovement Speed
+tooltip.enigmaticlegacy.berserk_emblem4= §dDamage Resistance
+tooltip.enigmaticlegacy.berserk_emblem5=§5These traits are multiplied by how many percents
+tooltip.enigmaticlegacy.berserk_emblem6=§5of your health pool you're currently missing.
+tooltip.enigmaticlegacy.berserk_emblem7=§dCurrent traits:
+tooltip.enigmaticlegacy.berserk_emblem8= §dAttack Damage
+tooltip.enigmaticlegacy.berserk_emblem9= §dAttack Speed
+tooltip.enigmaticlegacy.berserk_emblem10= §dMovement Speed
+tooltip.enigmaticlegacy.berserk_emblem11= §dDamage Resistance
+
+tooltip.enigmaticlegacy.etheriumArmor1=§5Is invisible while worn.
+tooltip.enigmaticlegacy.etheriumHelmet1=§5Is invisible while worn.
+tooltip.enigmaticlegacy.etheriumChestplate1=§5Is invisible while worn.
+tooltip.enigmaticlegacy.etheriumLeggings1=§5Are invisible while worn.
+tooltip.enigmaticlegacy.etheriumBoots1=§5Are invisible while worn.
+tooltip.enigmaticlegacy.etheriumArmorSetBonus1=§dSet Bonus:
+tooltip.enigmaticlegacy.etheriumArmorSetBonus2=§5- When your health drops below §6
+tooltip.enigmaticlegacy.etheriumArmorSetBonus2_1=§5, generates
+tooltip.enigmaticlegacy.etheriumArmorSetBonus3=§5  powerful shield that reflects most projectiles,
+tooltip.enigmaticlegacy.etheriumArmorSetBonus4=§5  provides §6
+tooltip.enigmaticlegacy.etheriumArmorSetBonus4_1=§6 Damage Resistance§5, and knocks
+tooltip.enigmaticlegacy.etheriumArmorSetBonus5=§5  back any creatures attack you.
+tooltip.enigmaticlegacy.etheriumArmorSetBonus6=§5
+
+tooltip.enigmaticlegacy.etheriumPickaxe1=§5Mines blocks in §63*3*1§5 area.
+tooltip.enigmaticlegacy.etheriumPickaxe2=§5Hold §6Shift§5 to suppress this effect.
+tooltip.enigmaticlegacy.etheriumPickaxe3=§5Press §6Shift+Right-Click§5 to toggle.
+
+tooltip.enigmaticlegacy.etheriumAxe1=§5Chops wood and leaves in §63*3*1§5 area.
+tooltip.enigmaticlegacy.etheriumAxe2=§5Hold §6Shift§5 to suppress this effect.
+tooltip.enigmaticlegacy.etheriumAxe3=§5Press §6Shift+Right-Click§5 to toggle.
+
+tooltip.enigmaticlegacy.etheriumShovel1=§5Digs blocks in §63*3*1§5 area.
+tooltip.enigmaticlegacy.etheriumShovel2=§5Hold §6Shift§5 to suppress this effect.
+tooltip.enigmaticlegacy.etheriumShovel3=§5Press §6Shift+Right-Click§5 to toggle.
+
+tooltip.enigmaticlegacy.etheriumSword1=§5Pressing §6Right-Click§5 while holding it will
+tooltip.enigmaticlegacy.etheriumSword2=§5throw you in the direction opposite to
+tooltip.enigmaticlegacy.etheriumSword3=§5your sight.
+tooltip.enigmaticlegacy.etheriumSword4=§5This ability has §
+tooltip.enigmaticlegacy.etheriumSword4_1= §6seconds§5 cooldown.
+tooltip.enigmaticlegacy.etheriumSword5=§5Press §6Shift+Right-Click§5 to suppress it.
+
+tooltip.enigmaticlegacy.astralBreaker1=§5Breaks blocks in §63*3*1§5 area.
+tooltip.enigmaticlegacy.astralBreaker2=§5Hold §6Shift§5 to suppress this effect.
+tooltip.enigmaticlegacy.astralBreaker3=§5Press §6Shift+Right-Click§5 to toggle.
+tooltip.enigmaticlegacy.astralBreaker4=§5Effective against most blocks.
+
+tooltip.enigmaticlegacy.megaSponge1=§5Instantly absorbs water in small radius
+tooltip.enigmaticlegacy.megaSponge2=§5around you, when you enter it.
+
+tooltip.enigmaticlegacy.witheritescrap1=§5Chance dropped from
+tooltip.enigmaticlegacy.witheritescrap2=§5wither skeleton
+
+tooltip.enigmaticlegacy.witherite1=§5Can be obtained through
+tooltip.enigmaticlegacy.witherite2=§5killing a wither when
+tooltip.enigmaticlegacy.witherite3=§5tortured by weakness.
+
+tooltip.enigmaticlegacy.enchanterPearl1=§5While equipped or in your inventory, you
+tooltip.enigmaticlegacy.enchanterPearl2=§5receive greater amount and power of
+tooltip.enigmaticlegacy.enchanterPearl3=§5enchantments when using §6Enchanting Table.
+tooltip.enigmaticlegacy.enchanterPearl4=§5Enchanting has chance to produce both
+tooltip.enigmaticlegacy.enchanterPearl5=§5curses and treasure enchantments.
+tooltip.enigmaticlegacy.enchanterPearl6=§5You do not require §6Lapis Lazuli§5 to enchant.
+
+tooltip.enigmaticlegacy.cursedStone1=§5If you die in the §6Nether§5, in the middle of
+tooltip.enigmaticlegacy.cursedStone2=§5sufficiently large lava lake with this stone
+tooltip.enigmaticlegacy.cursedStone3=§5in your inventory, §6Ring of the Seven Curses
+tooltip.enigmaticlegacy.cursedStone4=§5will be permanently destroyed, along with
+tooltip.enigmaticlegacy.cursedStone5=§5one of your §6Soul Crystals.
+tooltip.enigmaticlegacy.cursedStone6=§4This cannot be undone.
+
+tooltip.enigmaticlegacy.unholyGrail1=§5You'd better not be drinking from it...
+
+tooltip.enigmaticlegacy.redemptionPotion1=§5Allows you to atone for the sin committed
+tooltip.enigmaticlegacy.redemptionPotion2=§5by tasting §6The Forbidden Fruit§5.
+
+tooltip.enigmaticlegacy.infinimeal1=§5Functions as infinite §6Bone Meal.
+tooltip.enigmaticlegacy.infinimeal2=§5Effective on §6Cactuses§5, §6Vines§5,
+tooltip.enigmaticlegacy.infinimeal3=§6Nether Wart§5 and §6Sugar Cane.
+
+tooltip.enigmaticlegacy.animalGuide1=§5While in your inventory, your attacks can't
+tooltip.enigmaticlegacy.animalGuide2=§5deal damage to animals.
+tooltip.enigmaticlegacy.animalGuide3=§dAlteration of the §6Second Curse§d:
+tooltip.enigmaticlegacy.animalGuide4=§5- Wolves stay neutral towards you.
+
+tooltip.enigmaticlegacy.cursed_scroll1= §dAttack Damage
+tooltip.enigmaticlegacy.cursed_scroll2= §dMining Speed
+tooltip.enigmaticlegacy.cursed_scroll3= §dHealth Regeneration
+tooltip.enigmaticlegacy.cursed_scroll4=§5These traits are multiplied by total amount of
+tooltip.enigmaticlegacy.cursed_scroll5=§5curses that all items of your equipment bear.
+tooltip.enigmaticlegacy.cursed_scroll6=§dCurrent traits:
+tooltip.enigmaticlegacy.cursed_scroll7= §dAttack Damage
+tooltip.enigmaticlegacy.cursed_scroll8= §dMining Speed
+tooltip.enigmaticlegacy.cursed_scroll9= §dHealth Regeneration
+
+tooltip.enigmaticlegacy.xpTome1=§5Can store limitless amount of experience.
+tooltip.enigmaticlegacy.xpTome2=§5Press §6Shift§5+§6Right-Click§5 while holding it
+tooltip.enigmaticlegacy.xpTome3=§5to toggle it active.
+tooltip.enigmaticlegacy.xpTome4=§5Press §6Right-Click§5 to switch modes.
+tooltip.enigmaticlegacy.xpTome5=§5In §6Absorption mode§5, it will consume all your
+tooltip.enigmaticlegacy.xpTome6=§5experience, as long as it remains in inventory.
+tooltip.enigmaticlegacy.xpTome7=§5In §6Extraction mode§5, this behavior is reversed,
+tooltip.enigmaticlegacy.xpTome8=§5and the tome transfers all stored experience
+tooltip.enigmaticlegacy.xpTome9=§5back to you.
+tooltip.enigmaticlegacy.xpTome10=5While active, collects experience orbs
+tooltip.enigmaticlegacy.xpTome11=5within §6换§6 blocks§5 radius.
+tooltip.enigmaticlegacy.xpTomeMode=§dCurrent Mode:
+tooltip.enigmaticlegacy.xpTomeExp=§dExperience Stored:
+tooltip.enigmaticlegacy.xpTomeUnits=§6units, or
+tooltip.enigmaticlegacy.xpTomeLevels=§6levels.
+tooltip.enigmaticlegacy.xpTomeAbsorption=§6Absorption
+tooltip.enigmaticlegacy.xpTomeExtraction=§6Extraction
+tooltip.enigmaticlegacy.xpTomeDeactivated=§6Deactivated
+
+tooltip.enigmaticlegacy.enchantmentTransposer1=§5Combine with any enchanted item in a crafting grid
+tooltip.enigmaticlegacy.enchantmentTransposer2=§5to transfer all enchantments from item to the tome.
+tooltip.enigmaticlegacy.enchantmentTransposer3=§5The tome will be transformed into §6Enchanted Book§5.
+
+tooltip.enigmaticlegacy.golemHeart1=§dActive ability:
+tooltip.enigmaticlegacy.golemHeart2=§4- Absent.
+tooltip.enigmaticlegacy.golemHeartCooldown=§dСooldown: §60§6 seconds
+tooltip.enigmaticlegacy.golemHeart3=§dPassive abilities:
+tooltip.enigmaticlegacy.golemHeart4=§5- §6+
+tooltip.enigmaticlegacy.golemHeart4_1=§d Armor Points.
+tooltip.enigmaticlegacy.golemHeart5=§5- If nothing is equipped in armor slots, instead
+tooltip.enigmaticlegacy.golemHeart6=§5  gain §6+
+tooltip.enigmaticlegacy.golemHeart6_1=§d Armor Points§5, §6+
+tooltip.enigmaticlegacy.golemHeart6_2=§d Armor Toughness,
+tooltip.enigmaticlegacy.golemHeart7=§5  and §6+
+tooltip.enigmaticlegacy.golemHeart7_1=§d Explosion Damage Resistance.
+tooltip.enigmaticlegacy.golemHeart8=§5- §6+
+tooltip.enigmaticlegacy.golemHeart8_1=§d Melee Damage Resistance.
+tooltip.enigmaticlegacy.golemHeart9=§5- §6+
+tooltip.enigmaticlegacy.golemHeart9_1=§d Knockback Resistance.
+tooltip.enigmaticlegacy.golemHeart10=§5- Immunity to pressure and pricking damage.
+tooltip.enigmaticlegacy.golemHeart11=§5- You are vulnerable to §6Magic Damage.
+
+tooltip.enigmaticlegacy.oceanStone1=§dActive ability:
+tooltip.enigmaticlegacy.oceanStone2=§6- Starts thunderstorm, at great cost of experience.
+tooltip.enigmaticlegacy.oceanStone3=§6
+tooltip.enigmaticlegacy.oceanStoneCooldown=§dСooldown: §660§6 seconds
+tooltip.enigmaticlegacy.oceanStone4=§dPassive abilities:
+tooltip.enigmaticlegacy.oceanStone5=§5- §6
+tooltip.enigmaticlegacy.oceanStone5_1=§d Damage Resistance§5 against underwater creatures.
+tooltip.enigmaticlegacy.oceanStone6=§5- You no longer need air to breathe underwater.
+tooltip.enigmaticlegacy.oceanStone7=§5- Provides §6Night Vision§5 effect when in water.
+tooltip.enigmaticlegacy.oceanStone8=§5- Provides effects of §6Aqua Affinity§5 enchantment.
+tooltip.enigmaticlegacy.oceanStone9=§5- Negates gravity when underwater.
+tooltip.enigmaticlegacy.oceanStone10=§5- Greatly increased swimming speed.
+tooltip.enigmaticlegacy.oceanStone11=§5- You are vulnerable to §6Fire Damage.
+
+tooltip.enigmaticlegacy.voidPearl1=§dActive ability:
+tooltip.enigmaticlegacy.voidPearl2=§4- Absent.
+tooltip.enigmaticlegacy.voidPearlCooldown=§dСooldown: §60§6 seconds
+tooltip.enigmaticlegacy.voidPearl3=§dPassive abilities:
+tooltip.enigmaticlegacy.voidPearl4=§5- You experience no hunger, but regenerate
+tooltip.enigmaticlegacy.voidPearl5=§5  at much slower rate.
+tooltip.enigmaticlegacy.voidPearl6=§5- You no longer need air to breathe.
+tooltip.enigmaticlegacy.voidPearl7=§5- Immunity to any status effects.
+tooltip.enigmaticlegacy.voidPearl8=§5- Your attacks inflict §6Withering§5.
+tooltip.enigmaticlegacy.voidPearl9=§5- Any creatures nearby you, if they are
+tooltip.enigmaticlegacy.voidPearl10=§5  exposed to darkness, receive massive
+tooltip.enigmaticlegacy.voidPearl11=§5  damage and heavy debuffs. §6Skyflaps§5 are
+tooltip.enigmaticlegacy.voidPearl12=§5  affected regardless of light level.
+tooltip.enigmaticlegacy.voidPearl13=§5- §6
+tooltip.enigmaticlegacy.voidPearl13_1=§d Chance§5 that otherwise lethal damage
+tooltip.enigmaticlegacy.voidPearl14=§5  won't kill you.
+
+tooltip.enigmaticlegacy.add=§6+
+
+key.spellstoneAbility=Spellstone Active Ability
+
+tooltip.enigmaticlegacy.aoeDisabled=§cArea effects are suppressed.
+tooltip.enigmaticlegacy.abilityDisabled=§cSpecial abilities are suppressed.
+
+tooltip.enigmaticlegacy.tainted1=§5Slightly tainted by cursed one's presence.
+tooltip.enigmaticlegacy.tainted2=§5Tainted by the touch of a cursed being.
+
+tooltip.enigmaticlegacy.enabled=§6Enabled
+tooltip.enigmaticlegacy.disabled=§6Disabled
+
+tooltip.enigmaticlegacy.cursedOnesOnly1=Only those who bear the Seven Curses
+tooltip.enigmaticlegacy.cursedOnesOnly2=hold power to obtain and use this item.
+
+tooltip.enigmaticlegacy.soulCrystal1=§6Right-Click§5 to absorb the crystal and
+tooltip.enigmaticlegacy.soulCrystal2=§5restore one of your lost §6Soul Crystals.
+
+#1.18+
+item.ichor_bottle.name=Bottle of Ichor
+item.astral_fruit.name=Celestial Fruit
+
+item.ender_slayer.name=The Ender Slayer
+
+potion.blazing_strength=Blazing Might
+potion.growing_hunger=Growing Hunger
+potion.growing_bloodlust=Growing Bloodlust
+
+item.the_cube.name=Non-Euclidean Cube
+
+tooltip.enigmaticlegacy.ichorBottle1=§5To contempt the gods, one must know them...
+tooltip.enigmaticlegacy.ichorBottle2=§5Consume to obtain §6+1§d Amulet Slot §5permanently.
+
+tooltip.enigmaticlegacy.astralFruit1=§5Consume to obtain §6+1§d Ring Slot §5permanently.
+
+tooltip.enigmaticlegacy.soulCompass1=§5Points to the location of nearest §6Soul Crystal§5.
+
+tooltip.enigmaticlegacy.enigmaticEye1=§5It is connected to location beyond your space and
+tooltip.enigmaticlegacy.enigmaticEye2=§5time. You can awaken the eye, if you wish to risk
+tooltip.enigmaticlegacy.enigmaticEye3=§5drawing attention of someone... or something.
+
+tooltip.enigmaticlegacy.theCube1=§dActive ability:
+tooltip.enigmaticlegacy.theCube2=§6- Teleports you to random location in one of three main dimensions.
+tooltip.enigmaticlegacy.theCube3=§dСooldown: §6%1$s§6 seconds
+tooltip.enigmaticlegacy.theCube4=§dPassive abilities:
+tooltip.enigmaticlegacy.theCube5=§5- §6+35%%§d Sprinting Speed
+tooltip.enigmaticlegacy.theCube6=§5- §6+100%%§d Swimming Speed
+tooltip.enigmaticlegacy.theCube7=§5- §6+60%%§d Mining Speed
+tooltip.enigmaticlegacy.theCube8=§5- §6+40%%§d Attack Speed
+tooltip.enigmaticlegacy.theCube9=§5- §6+1§d Fortune Level
+tooltip.enigmaticlegacy.theCube10=§5- §6+1§d Luck
+tooltip.enigmaticlegacy.theCube11=§5- Any attacks that deal above §6%1$s§6 damage§5 are completely negated.
+tooltip.enigmaticlegacy.theCube12=§5- §635%%§d Chance§5 to deflect an incoming attack or projectile.
+tooltip.enigmaticlegacy.theCube13=§5- When attacked in melee, applies random debuff to attacker.
+tooltip.enigmaticlegacy.theCube14=§5- Whenever you slay any creature, you receive random buff.
+tooltip.enigmaticlegacy.theCube15=§5- You need no air to breathe.
+tooltip.enigmaticlegacy.theCube16=§5- Immunity to negative status effects.
+tooltip.enigmaticlegacy.theCube17=§5- Immunity to pressure, fall, collision, pricking, teleportation, fire
+tooltip.enigmaticlegacy.theCube18=§5  and lava damage.
+tooltip.enigmaticlegacy.theCube19=§5- When you have more than §61 health§5, you survive any lethal damage
+tooltip.enigmaticlegacy.theCube20=§5  with §61 health§5 remaining. If you have §61 health§5 or less, attempts to
+tooltip.enigmaticlegacy.theCube21=§5  trigger active ability to prevent lethal damage. Restores your
+tooltip.enigmaticlegacy.theCube22=§5  health to §630%%§5 and applies powerful buffs if successful.
+
+tooltip.enigmaticlegacy.enigmaticEyeAwakened1=§5Now that you have drawn his attention, whoever uses
+tooltip.enigmaticlegacy.enigmaticEyeAwakened2=§5the eye to observe you and the world does not seem to
+tooltip.enigmaticlegacy.enigmaticEyeAwakened3=§5need it in order to reach you. Whether he is incapable
+tooltip.enigmaticlegacy.enigmaticEyeAwakened4=§5or simply unwilling to establish any contact beyond
+tooltip.enigmaticlegacy.enigmaticEyeAwakened5=§5mental remains a mystery.
+tooltip.enigmaticlegacy.enigmaticEyeAwakened6=§5Reveals true name of players bearing §6Charming Insignia§5.
+
+tooltip.enigmaticlegacy.infernalShield1=§6When equipped:
+tooltip.enigmaticlegacy.infernalShield2=§5- Extinguishes you when on fire.
+tooltip.enigmaticlegacy.infernalShield3=§6When blocking:
+tooltip.enigmaticlegacy.infernalShield4=§5- Can block attacks immediately after being raised.
+tooltip.enigmaticlegacy.infernalShield5=§5- Can block §6Piercing§5-enchanted arrows.
+tooltip.enigmaticlegacy.infernalShield6=§5- Cannot be disabled by weapons normally effective
+tooltip.enigmaticlegacy.infernalShield7=§5  against shields.
+tooltip.enigmaticlegacy.infernalShield8=§5- Burns attackers when blocking melee damage.
+tooltip.enigmaticlegacy.infernalShield9=§5- Successful blocks grant increasing §6Blazing Might§5
+tooltip.enigmaticlegacy.infernalShield10=§5  effect, but any damage received takes it away.
+tooltip.enigmaticlegacy.infernalShield11=§5- Enemy attacks from behind deal §650%%§5 more damage.
+
+tooltip.enigmaticlegacy.theInfinitum1=§5The abyss returns even the boldest gaze.
+tooltip.enigmaticlegacy.theInfinitum2=§dAlteration of the §6Fourth Curse§d:
+tooltip.enigmaticlegacy.theInfinitum3=§5- Always deals its full damage.
+tooltip.enigmaticlegacy.theInfinitum4= §dDamage§5 against bosses and players.
+tooltip.enigmaticlegacy.theInfinitum5= §dKnockback
+tooltip.enigmaticlegacy.theInfinitum6= §dLifesteal
+tooltip.enigmaticlegacy.theInfinitum7=§5Can bear most sword enchantments.
+tooltip.enigmaticlegacy.theInfinitum8=§5Each attack inflicts horrific debuffs.
+tooltip.enigmaticlegacy.theInfinitum9=§5When held, provides §6
+tooltip.enigmaticlegacy.theInfinitum9_1=§dChance§5 that otherwise
+tooltip.enigmaticlegacy.theInfinitum10=§5lethal damage won't kill you.
+
+tooltip.enigmaticlegacy.worthyOnesOnly1=§5The sacrifice neccessary to aquire this item
+tooltip.enigmaticlegacy.worthyOnesOnly2=§5is immense - you have to spend §699.5%%§5 of your
+tooltip.enigmaticlegacy.worthyOnesOnly3=§5time in the world suffering the §6Seven Curses§5.
+tooltip.enigmaticlegacy.worthyOnesOnly4=For now, your time measures at:
+
+tooltip.enigmaticlegacy.eldritchPan1=§5Alteration of the §6Fourth Curse§d:
+tooltip.enigmaticlegacy.eldritchPan2=§6- Always deals its full damage.
+tooltip.enigmaticlegacy.eldritchPan3=§dLifesteal
+tooltip.enigmaticlegacy.eldritchPan4=§dHungersteal
+tooltip.enigmaticlegacy.eldritchPan4_alt=§6%s §dHungersteal (converts to health)
+tooltip.enigmaticlegacy.eldritchPan5=§5Cooks the meat of slain creatures.
+tooltip.enigmaticlegacy.eldritchPan6=§5Can be used as a shield, and consume projectiles while blocking.
+tooltip.enigmaticlegacy.eldritchPan7=§5Continuosly holding the pan grants a §6Growing Hunger§5 effect,
+tooltip.enigmaticlegacy.eldritchPan8=§5which makes you hungrier, but stronger.
+tooltip.enigmaticlegacy.eldritchPan7_alt=§5Continuosly holding the pan grants a §6Growing Bloodlust§5 effect,
+tooltip.enigmaticlegacy.eldritchPan8_alt=§5which makes you lose health, but grants strength and lifesteal.
+tooltip.enigmaticlegacy.eldritchPan8p_alt=§5This effect cannot kill you.
+tooltip.enigmaticlegacy.eldritchPan9=§5Each new creature slain with the pan gives it a permanent §6
+tooltip.enigmaticlegacy.eldritchPan10=§5§dDamage§5 and
+tooltip.enigmaticlegacy.eldritchPan10_1= §dArmor§5 when held.
+tooltip.enigmaticlegacy.eldritchPanLore1=§5Raw and primal hunger given form.
+tooltip.enigmaticlegacy.eldritchPanKills1=§dUnique Kills:
+tooltip.enigmaticlegacy.eldritchPanKillsMax=§6The pan is sated... but you are not.
+
+tooltip.enigmaticlegacy.eldritchAmulet1=§5When worn, your inventory persists with you
+tooltip.enigmaticlegacy.eldritchAmulet2=§5after death. §6Experience§5 and §6Soul Crystals§5 will
+tooltip.enigmaticlegacy.eldritchAmulet3=§5still be lost.
+tooltip.enigmaticlegacy.eldritchAmulet4=§5Creatures beneath your gaze will be slowed
+tooltip.enigmaticlegacy.eldritchAmulet5=§5down and weakened.
+
+tooltip.enigmaticlegacy.desolationRing1=§6Iron Golems§5, §6Endermen§5 and §6Zombie Pigman§5
+tooltip.enigmaticlegacy.desolationRing2=§5will not spawn in your proximity.
+
+tooltip.enigmaticlegacy.enderSlayer1=§5To exterminate them all...
+tooltip.enigmaticlegacy.enderSlayer2=§5Is such the only way?
+tooltip.enigmaticlegacy.enderSlayer1_alt=§5To slap them all...
+tooltip.enigmaticlegacy.enderSlayer2_alt=§5Is such the only way?
+tooltip.enigmaticlegacy.enderSlayer3=§6+%1$s §dDamage§5 against dwellers of §6The End§5.
+tooltip.enigmaticlegacy.enderSlayer4=§6+%1$s §dKnockback§5 against dwellers of §6The End§5.
+tooltip.enigmaticlegacy.enderSlayer5=§5In §6The End§5, fully charged attacks deal
+tooltip.enigmaticlegacy.enderSlayer6=§5colossal damage to §6Endermen§5, and all drops
+tooltip.enigmaticlegacy.enderSlayer7=§5from them are transformed into experience.
+tooltip.enigmaticlegacy.enderSlayer8=§5Temporarily disables teleportation abilities of
+tooltip.enigmaticlegacy.enderSlayer9=§5§6Shulkers§5 and §6Endermen§5.
+tooltip.enigmaticlegacy.enderSlayer10=§5Temporarily disables active ability of §6Eye of
+tooltip.enigmaticlegacy.enderSlayer11=§6Nebula§5, §6Non-Euclidean Cube§5 and ability to use
+tooltip.enigmaticlegacy.enderSlayer12=§5§6Ender Pearls§5, §6Potions of Recall§5 and §6Twisted
+tooltip.enigmaticlegacy.enderSlayer13=§5§6Mirror§5 for attacked players.
+
+#Misc
+itemGroup.tabEnigmaticLegacy=Enigmatic Legacy²
+button.enderChest=Ender Chest
+key.categories.enigmaticlegacy=Enigmatic Legacy²
+key.enderRing=Open Ender Chest
+message.enigmaticlegacy.eldritch_pan_buff=With the taste of this new soul, The Voracious Pan grows ever stronger.
+
+commands.setcursedtime.usage=Usage: /setcursedtime tick (optional)playerName
+commands.setnoringtime.usage=Usage: /setnoringtime tick (optional)playerName
+
+death.darkness=%1$s was devoured by darkness
+
+#Compat
+tooltip.enigmaticlegacy.compatXat1=§dAlteration of the §6'Secret' Curse§d:
+tooltip.enigmaticlegacy.compatXat2=§5- Endermen no longer teleport to you.
+
+tooltip.enigmaticlegacy.compatXat3=§dAlteration of the §6Seventh Curse§d:
+tooltip.enigmaticlegacy.compatXat4=§5- You can sleep as normal.
+
+#Additions
+item.blessed_stone.name=Holy Stone
+item.blessed_ring.name=Ring of Redemption
+item.half_heart_mask.name=Ominous Mask
+item.thunder_scroll.name=Scroll of Thunder Embrace
+item.lost_engine.name=Lost Engine
+
+tooltip.enigmaticlegacy.blessed1=§6Still shiny from your hand.
+
+tooltip.enigmaticaddons.blessStone1=§5Take this stone to seek death,
+tooltip.enigmaticaddons.blessStone2=§5hen the §6Ring of the Seven Curses §5will
+tooltip.enigmaticaddons.blessStone3=§5transform into the §6Ring of Redemption§5.
+tooltip.enigmaticaddons.blessStone_info_1=§4A ritual exclusive to the hardcore is...
+tooltip.enigmaticaddons.blessStone_info_2=§4§kXX_XX_XX_XX
+tooltip.enigmaticaddons.blessStone1_hardcore=§5The tenacious will allows the curses to compromise
+tooltip.enigmaticaddons.blessStone2_hardcore=§5Let's begin the transaction of souls
+tooltip.enigmaticaddons.blessStone_hardcore_info=§dThe Hardcore can also be overcome.
+
+book.enigmaticaddons.entry.bless_stone.name=The Choice of Rebirth
+book.enigmaticaddons.entry.bless_stone.heading=The True Redemption
+book.enigmaticaddons.entry.bless_stone.page.1=When you are hesitating whether to sacrifice yourself to break free from the Seven Curse Ring, there is a brand new choice in front of you.<br2/>The biggest problem is the Loss of Soul, and with the current materials and methods, it seems impossible. Although we can't break the connection, we could let the connection be presented in a new way.
+book.enigmaticaddons.entry.bless_stone.page.2=Slowly infiltrate a little pure power into the Ring of Seven Curses, and mobilize the blessings to change the curses. However, all these operations still need to be carried out when the contact is vulnerable, that is, you need to face death.
+book.enigmaticaddons.entry.bless_stone.page.3=After the final soul loss, the Ring of Seven Curses will completely disappear from your sight and turn into a touch of gold on your hand.<br2/>The previous curses has completely disappeared, also the original blessing has been partially preserved. Although most of the objects that once
+book.enigmaticaddons.entry.bless_stone.page.4=accompanied you are no longer usable, there are still some things that bear witness to your past filled with suffering, which is constantly approaching death. They still recognize your qualifications, are willing to break the shackles of the curse for you. <br2/>May you enjoy life to the fullest on days away from the curses. But you cannot truly understand this ring, please do not make the choice easily.
+
+tooltip.enigmaticaddons.blessRing1=§dFor those who have experienced torment,
+tooltip.enigmaticaddons.blessRing2=§dremaining blessings are still effective:
+tooltip.enigmaticaddons.blessRing3=§5- You receive §6%1$s§5 damage from §6ANY§5 source.
+tooltip.enigmaticaddons.blessRing4=§5- Increase the damage you cause by §6%1$s
+tooltip.enigmaticaddons.blessRing5=§5- Obtain sustained §dRegeneration.
+tooltip.enigmaticaddons.blessRing6=§5- §6+%1$s§d Looting Level
+tooltip.enigmaticaddons.blessRing7=§5- §6+%1$s§d Fortune Level
+tooltip.enigmaticaddons.blessRing8=§5- Unique drops from some creatures.
+tooltip.enigmaticaddons.blessRing9=§5- You can create and use unique relics.
+tooltip.enigmaticaddons.blessRingLore1=§5This ring shines with a unique
+tooltip.enigmaticaddons.blessRingLore2=§5luster, remembering those years
+tooltip.enigmaticaddons.blessRingLore3=§5of torment, and also, it is a
+tooltip.enigmaticaddons.blessRingLore4=§5proof of power......
+
+tooltip.enigmaticaddons.thunderScroll1=§5Sweep attack deals §6100%% §5damage.
+tooltip.enigmaticaddons.thunderScroll2=§5Deal more damage to§d armored §5targets.
+tooltip.enigmaticaddons.thunderScroll3=§5After being hit much times,the target
+tooltip.enigmaticaddons.thunderScroll4=§5will be struck by §6lightning bolt§5.
+tooltip.enigmaticaddons.thunderScroll5=§5Reduce lightning damage by half.
+
+tooltip.enigmaticaddons.lostEngine1=§dActive ability:
+tooltip.enigmaticaddons.lostEngine2=§4- Absent.
+tooltip.enigmaticaddons.lostEngineCooldown=§dСooldown: §6%1$s§6 seconds
+tooltip.enigmaticaddons.lostEngine3=§dPassive abilities:
+tooltip.enigmaticaddons.lostEngine4=§5- Enhance mobility and toughness.
+tooltip.enigmaticaddons.lostEngine5=§5- Reduce item cooldowns by §633%%§5.
+tooltip.enigmaticaddons.lostEngine6=§5- Immune to §dFall §5& §dExplosion §5damage.
+tooltip.enigmaticaddons.lostEngine7=§5- Add §6%1$s§d Crit damage§5.
+tooltip.enigmaticaddons.lostEngine8=§5- Golems will not target you actively.
+tooltip.enigmaticaddons.lostEngine9=§5- You are vulnerable to §dMagic Damage§5 and §dLightning Damage§5.
+
+tooltip.enigmaticlegacy.halfHeartMask1=§6When equipped:
+tooltip.enigmaticlegacy.halfHeartMask2=§5- Illagers will treat you as one of them.
+tooltip.enigmaticlegacy.halfHeartMask3=§5- Your can only regenerate your health by half.
+tooltip.enigmaticlegacy.halfHeartMask4=§5- Villagers no longer trade with you.
+tooltip.enigmaticlegacy.halfHeartMask5=§5- You can also trade with Illagers.
+
+tooltip.enigmaticaddons.blessUse1=This item understands your past experiences,
+tooltip.enigmaticaddons.blessUse2=and it still recognizes your qualifications.

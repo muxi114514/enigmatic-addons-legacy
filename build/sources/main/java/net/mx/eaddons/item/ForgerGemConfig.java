@@ -3,7 +3,6 @@ package net.mx.eaddons.item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.config.Configuration;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +12,7 @@ public class ForgerGemConfig {
 
     private static final String[] DEFAULT_BLACKLIST = new String[]{};
 
-    public static void init(File configDir) {
-        Configuration config = new Configuration(new File(configDir, "jmheaven_forger_gem.cfg"));
-        config.load();
+    public static void init(Configuration config) {
 
         strictUnbreakableForge = config.getBoolean("StrictUnbreakableForge", "ForgerGem", true,
                 "When true, only tools, swords, and armor can be made unbreakable via Forger's Gem. "
@@ -32,9 +29,6 @@ public class ForgerGemConfig {
             }
         }
 
-        if (config.hasChanged()) {
-            config.save();
-        }
     }
 
     public static boolean isBlacklisted(ResourceLocation itemId) {

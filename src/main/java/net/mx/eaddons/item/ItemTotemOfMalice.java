@@ -48,8 +48,21 @@ public class ItemTotemOfMalice extends Item implements IBauble {
 
     @Override
     public int getMaxDamage(ItemStack stack) {
-        return TotemOfMaliceConfig.baseDurability
-                + EnchantmentHelper.getEnchantmentLevel(Enchantments.UNBREAKING, stack);
+        // Read Unbreaking level directly from NBT to avoid infinite recursion:
+        // EnchantmentHelper → AstralSorcery hook → getDamage() → getMaxDamage() → loop
+        int unbreakingLevel = 0;
+        if (stack.isItemEnchanted()) {
+            net.minecraft.nbt.NBTTagList enchList = stack.getEnchantmentTagList();
+            int unbreakingId = Enchantment.getEnchantmentID(Enchantments.UNBREAKING);
+            for (int i = 0; i < enchList.tagCount(); i++) {
+                net.minecraft.nbt.NBTTagCompound tag = enchList.getCompoundTagAt(i);
+                if (tag.getShort("id") == unbreakingId) {
+                    unbreakingLevel = tag.getShort("lvl");
+                    break;
+                }
+            }
+        }
+        return TotemOfMaliceConfig.baseDurability + unbreakingLevel;
     }
 
     /** Remaining uses (stored in NBT). New items default to max. */
@@ -100,9 +113,11 @@ public class ItemTotemOfMalice extends Item implements IBauble {
 
     @Override
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-        if (repair.isEmpty()) return false;
+        if (repair.isEmpty())
+            return false;
         String configId = TotemOfMaliceConfig.repairItemRegistryName;
-        if (configId == null || configId.isEmpty()) return false;
+        if (configId == null || configId.isEmpty())
+            return false;
         ResourceLocation id;
         if (configId.indexOf(':') < 0) {
             id = new ResourceLocation("minecraft", configId);
@@ -126,10 +141,13 @@ public class ItemTotemOfMalice extends Item implements IBauble {
         list.add("");
         if (GuiScreen.isShiftKeyDown()) {
             list.add(TextFormatting.DARK_RED + I18n.format("tooltip.eaddons.totem_of_malice.header"));
-            list.add(I18n.format("tooltip.eaddons.totem_of_malice.damage_illager", TotemOfMaliceConfig.damageBonusPercent + "%"));
-            list.add(I18n.format("tooltip.eaddons.totem_of_malice.reduce_illager", TotemOfMaliceConfig.damageReductionPercent + "%"));
+            list.add(I18n.format("tooltip.eaddons.totem_of_malice.damage_illager",
+                    TotemOfMaliceConfig.damageBonusPercent + "%"));
+            list.add(I18n.format("tooltip.eaddons.totem_of_malice.reduce_illager",
+                    TotemOfMaliceConfig.damageReductionPercent + "%"));
             list.add(I18n.format("tooltip.eaddons.totem_of_malice.cheat_death"));
-            list.add(I18n.format("tooltip.eaddons.totem_of_malice.durability", getRemainingUses(stack), getMaxDamage(stack)));
+            list.add(I18n.format("tooltip.eaddons.totem_of_malice.durability", getRemainingUses(stack),
+                    getMaxDamage(stack)));
         } else {
             list.add(I18n.format("tooltip.eaddons.totem_of_malice.hold_shift"));
         }
@@ -154,7 +172,8 @@ public class ItemTotemOfMalice extends Item implements IBauble {
 
     /** Whether the player has the totem in main hand, off hand, or bauble slot. */
     public static boolean hasTotemOfMalice(EntityPlayer player) {
-        if (player == null) return false;
+        if (player == null)
+            return false;
         if (!player.getHeldItemMainhand().isEmpty() && player.getHeldItemMainhand().getItem() == INSTANCE)
             return true;
         if (!player.getHeldItemOffhand().isEmpty() && player.getHeldItemOffhand().getItem() == INSTANCE)
@@ -162,17 +181,24 @@ public class ItemTotemOfMalice extends Item implements IBauble {
         return BaublesApi.isBaubleEquipped(player, INSTANCE) != -1;
     }
 
-    /** Returns the totem stack (main hand, then off hand, then bauble). Empty if none. */
+    /**
+     * Returns the totem stack (main hand, then off hand, then bauble). Empty if
+     * none.
+     */
     public static ItemStack getTotemStack(EntityPlayer player) {
-        if (player == null) return ItemStack.EMPTY;
+        if (player == null)
+            return ItemStack.EMPTY;
         ItemStack main = player.getHeldItemMainhand();
-        if (!main.isEmpty() && main.getItem() == INSTANCE) return main;
+        if (!main.isEmpty() && main.getItem() == INSTANCE)
+            return main;
         ItemStack off = player.getHeldItemOffhand();
-        if (!off.isEmpty() && off.getItem() == INSTANCE) return off;
+        if (!off.isEmpty() && off.getItem() == INSTANCE)
+            return off;
         int slot = BaublesApi.isBaubleEquipped(player, INSTANCE);
         if (slot != -1) {
             ItemStack bauble = BaublesApi.getBaubles(player).getStackInSlot(slot);
-            if (!bauble.isEmpty() && bauble.getItem() == INSTANCE) return bauble;
+            if (!bauble.isEmpty() && bauble.getItem() == INSTANCE)
+                return bauble;
         }
         return ItemStack.EMPTY;
     }
@@ -188,7 +214,10 @@ public class ItemTotemOfMalice extends Item implements IBauble {
         return count;
     }
 
-    /** Consume one use from the stack. Caller must ensure stack is the same reference as in hand/slot. */
+    /**
+     * Consume one use from the stack. Caller must ensure stack is the same
+     * reference as in hand/slot.
+     */
     public static void consumeOneUse(ItemStack stack) {
         int remaining = getRemainingUses(stack) - 1;
         setRemainingUses(stack, remaining);
@@ -203,6 +232,7 @@ public class ItemTotemOfMalice extends Item implements IBauble {
 
     public static void registerModels(net.minecraftforge.client.event.ModelRegistryEvent event) {
         net.minecraftforge.client.model.ModelLoader.setCustomModelResourceLocation(INSTANCE, 0,
-                new net.minecraft.client.renderer.block.model.ModelResourceLocation("eaddons:totem_of_malice", "inventory"));
+                new net.minecraft.client.renderer.block.model.ModelResourceLocation("eaddons:totem_of_malice",
+                        "inventory"));
     }
 }

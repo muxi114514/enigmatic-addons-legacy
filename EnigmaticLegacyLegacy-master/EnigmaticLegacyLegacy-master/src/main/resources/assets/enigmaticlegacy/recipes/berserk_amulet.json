@@ -1,0 +1,32 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "UCU",
+    "IHI",
+    "DGD"
+  ],
+  "key": {
+    "U": {
+      "item": "minecraft:red_mushroom"
+    },
+    "D": {
+      "item": "minecraft:ghast_tear"
+    },
+    "I": {
+      "item": "minecraft:blaze_powder"
+    },
+    "C": {
+      "item": "minecraft:golden_sword"
+    },
+    "H": {
+      "item": "enigmaticlegacy:twisted_core"
+    },
+    "G": {
+      "type": "forge:ore_dict",
+      "ore": "ingotNetherite"
+    }
+  },
+  "result": {
+    "item": "enigmaticlegacy:berserk_emblem"
+  }
+}

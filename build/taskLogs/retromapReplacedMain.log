@@ -50,8 +50,10 @@ Import: net.minecraft.client.renderer.block.model.ModelResourceLocation
 Import: net.minecraft.item.Item
 Import: net.minecraft.potion.Potion
 Import: net.minecraft.util.ResourceLocation
+Import: net.minecraftforge.common.config.Configuration
 Import: net.mx.eaddons.item.*
 Import: net.mx.eaddons.potion.*
+Import: java.io.File
 Import: net.minecraftforge.fml.common.registry.EntityEntry
 End  Processing: net/mx/eaddons/EAddonsMod.java
 
@@ -171,7 +173,6 @@ End  Processing: net/mx/eaddons/item/AntiqueBagGuiHandler.java
 Start Processing: net/mx/eaddons/item/ArtificialFlowerConfig.java
 Import: net.minecraft.util.ResourceLocation
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 Import: java.util.ArrayList
 Import: java.util.List
 End  Processing: net/mx/eaddons/item/ArtificialFlowerConfig.java
@@ -466,7 +467,6 @@ End  Processing: net/mx/eaddons/item/DragonBowBrewingRecipe.java
 
 Start Processing: net/mx/eaddons/item/DragonBowConfig.java
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 End  Processing: net/mx/eaddons/item/DragonBowConfig.java
 
 Start Processing: net/mx/eaddons/item/EarthPromiseClientHelper.java
@@ -476,7 +476,6 @@ End  Processing: net/mx/eaddons/item/EarthPromiseClientHelper.java
 
 Start Processing: net/mx/eaddons/item/EarthPromiseConfig.java
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 End  Processing: net/mx/eaddons/item/EarthPromiseConfig.java
 
 Start Processing: net/mx/eaddons/item/EarthPromiseCooldownMessage.java
@@ -553,7 +552,6 @@ End  Processing: net/mx/eaddons/item/EarthPromiseEventHandler.java
 
 Start Processing: net/mx/eaddons/item/EmblemAdventurerConfig.java
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 End  Processing: net/mx/eaddons/item/EmblemAdventurerConfig.java
 
 Start Processing: net/mx/eaddons/item/EmblemAdventurerEventHandler.java
@@ -748,7 +746,6 @@ End  Processing: net/mx/eaddons/item/EtheriumCoreClientHelper.java
 
 Start Processing: net/mx/eaddons/item/EtheriumCoreConfig.java
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 End  Processing: net/mx/eaddons/item/EtheriumCoreConfig.java
 
 Start Processing: net/mx/eaddons/item/EtheriumCoreEventHandler.java
@@ -870,7 +867,6 @@ End  Processing: net/mx/eaddons/item/ForgerGemClientHelper.java
 Start Processing: net/mx/eaddons/item/ForgerGemConfig.java
 Import: net.minecraft.util.ResourceLocation
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 Import: java.util.ArrayList
 Import: java.util.List
 End  Processing: net/mx/eaddons/item/ForgerGemConfig.java
@@ -2072,56 +2068,62 @@ Rename field net/minecraft/item/Item/maxStackSize[1445,1457]::maxStackSize->fiel
 Rename method net/minecraft/item/Item/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/item/Item;[1473,1491]::setUnlocalizedName->func_77655_b
 Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1558,1572]::setCreativeTab->func_77637_a
 Rename method net/minecraft/item/Item/getRarity (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumRarity;[1651,1660]::getRarity->func_77613_e
-Rename method net/minecraft/enchantment/EnchantmentHelper/getEnchantmentLevel (Lnet/minecraft/enchantment/Enchantment;Lnet/minecraft/item/ItemStack;)I[1869,1888]::getEnchantmentLevel->func_77506_a
-Rename field net/minecraft/init/Enchantments/UNBREAKING[1895,1905]::UNBREAKING->field_185307_s
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2071,2078]::isEmpty->func_190926_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2098,2105]::getItem->func_77973_b
-Rename method net/minecraft/item/ItemStack/getSubCompound (Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;[2201,2215]::getSubCompound->func_179543_a
-Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[2259,2265]::hasKey->func_74764_b
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[2369,2379]::getInteger->func_74762_e
-Rename method net/minecraft/item/ItemStack/getOrCreateSubCompound (Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;[2602,2624]::getOrCreateSubCompound->func_190925_c
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[2627,2637]::setInteger->func_74768_a
-Rename method net/minecraft/item/Item/isDamageable ()Z[3047,3059]::isDamageable->func_77645_m
-Rename field net/minecraft/init/Enchantments/MENDING[3235,3242]::MENDING->field_185296_A
-Rename method net/minecraft/item/Item/getItemEnchantability ()I[3381,3402]::getItemEnchantability->func_77619_b
-Rename method net/minecraft/item/Item/getIsRepairable (Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)Z[3456,3471]::getIsRepairable->func_82789_a
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[3528,3535]::isEmpty->func_190926_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4063,4070]::getItem->func_77973_b
-Rename method net/minecraft/item/Item/hasEffect (Lnet/minecraft/item/ItemStack;)Z[4160,4169]::hasEffect->func_77636_d
-Rename method net/minecraft/item/Item/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[4278,4292]::addInformation->func_77624_a
-Rename method net/minecraft/client/gui/GuiScreen/isShiftKeyDown ()Z[4419,4433]::isShiftKeyDown->func_146272_n
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[4490,4496]::format->func_135052_a
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[4574,4580]::format->func_135052_a
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[4712,4718]::format->func_135052_a
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[4854,4860]::format->func_135052_a
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[4943,4949]::format->func_135052_a
-Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5094,5100]::format->func_135052_a
+Rename method net/minecraft/item/ItemStack/isItemEnchanted ()Z[2002,2017]::isItemEnchanted->func_77948_v
+Rename method net/minecraft/item/ItemStack/getEnchantmentTagList ()Lnet/minecraft/nbt/NBTTagList;[2078,2099]::getEnchantmentTagList->func_77986_q
+Rename method net/minecraft/enchantment/Enchantment/getEnchantmentID (Lnet/minecraft/enchantment/Enchantment;)I[2137,2153]::getEnchantmentID->func_185258_b
+Rename field net/minecraft/init/Enchantments/UNBREAKING[2164,2174]::UNBREAKING->field_185307_s
+Rename method net/minecraft/nbt/NBTTagList/tagCount ()I[2222,2230]::tagCount->func_74745_c
+Rename method net/minecraft/nbt/NBTTagList/getCompoundTagAt (I)Lnet/minecraft/nbt/NBTTagCompound;[2309,2325]::getCompoundTagAt->func_150305_b
+Rename method net/minecraft/nbt/NBTTagCompound/getShort (Ljava/lang/String;)S[2351,2359]::getShort->func_74765_d
+Rename method net/minecraft/nbt/NBTTagCompound/getShort (Ljava/lang/String;)S[2431,2439]::getShort->func_74765_d
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[2742,2749]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[2769,2776]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getSubCompound (Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;[2872,2886]::getSubCompound->func_179543_a
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[2930,2936]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[3040,3050]::getInteger->func_74762_e
+Rename method net/minecraft/item/ItemStack/getOrCreateSubCompound (Ljava/lang/String;)Lnet/minecraft/nbt/NBTTagCompound;[3273,3295]::getOrCreateSubCompound->func_190925_c
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[3298,3308]::setInteger->func_74768_a
+Rename method net/minecraft/item/Item/isDamageable ()Z[3718,3730]::isDamageable->func_77645_m
+Rename field net/minecraft/init/Enchantments/MENDING[3906,3913]::MENDING->field_185296_A
+Rename method net/minecraft/item/Item/getItemEnchantability ()I[4052,4073]::getItemEnchantability->func_77619_b
+Rename method net/minecraft/item/Item/getIsRepairable (Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)Z[4127,4142]::getIsRepairable->func_82789_a
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[4199,4206]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[4758,4765]::getItem->func_77973_b
+Rename method net/minecraft/item/Item/hasEffect (Lnet/minecraft/item/ItemStack;)Z[4855,4864]::hasEffect->func_77636_d
+Rename method net/minecraft/item/Item/addInformation (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Ljava/util/List;Lnet/minecraft/client/util/ITooltipFlag;)V[4973,4987]::addInformation->func_77624_a
+Rename method net/minecraft/client/gui/GuiScreen/isShiftKeyDown ()Z[5114,5128]::isShiftKeyDown->func_146272_n
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5185,5191]::format->func_135052_a
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5269,5275]::format->func_135052_a
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5427,5433]::format->func_135052_a
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5589,5595]::format->func_135052_a
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5678,5684]::format->func_135052_a
+Rename method net/minecraft/client/resources/I18n/format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;[5849,5855]::format->func_135052_a
 New Key: class net/minecraftforge/fml/common/Optional
 New Key: class net/minecraftforge/fml/common/Optional
 New Key: class net/minecraftforge/fml/common/Optional
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[5835,5854]::getHeldItemMainhand->func_184614_ca
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5852,5859]::isEmpty->func_190926_b
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[5878,5897]::getHeldItemMainhand->func_184614_ca
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[5895,5902]::getItem->func_77973_b
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItemOffhand ()Lnet/minecraft/item/ItemStack;[5968,5986]::getHeldItemOffhand->func_184592_cb
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[5985,5992]::isEmpty->func_190926_b
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItemOffhand ()Lnet/minecraft/item/ItemStack;[6011,6029]::getHeldItemOffhand->func_184592_cb
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6028,6035]::getItem->func_77973_b
-Rename field net/minecraft/item/ItemStack/EMPTY[6357,6362]::EMPTY->field_190927_a
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[6405,6424]::getHeldItemMainhand->func_184614_ca
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6441,6448]::isEmpty->func_190926_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6465,6472]::getItem->func_77973_b
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItemOffhand ()Lnet/minecraft/item/ItemStack;[6537,6555]::getHeldItemOffhand->func_184592_cb
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6572,6579]::isEmpty->func_190926_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6595,6602]::getItem->func_77973_b
-Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[6788,6802]::getStackInSlot->func_70301_a
-Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6832,6839]::isEmpty->func_190926_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6858,6865]::getItem->func_77973_b
-Rename field net/minecraft/item/ItemStack/EMPTY[6936,6941]::EMPTY->field_190927_a
-Rename method net/minecraft/enchantment/EnchantmentHelper/getEnchantments (Lnet/minecraft/item/ItemStack;)Ljava/util/Map;[7183,7198]::getEnchantments->func_82781_a
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[6602,6621]::getHeldItemMainhand->func_184614_ca
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6619,6626]::isEmpty->func_190926_b
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[6645,6664]::getHeldItemMainhand->func_184614_ca
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6662,6669]::getItem->func_77973_b
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemOffhand ()Lnet/minecraft/item/ItemStack;[6735,6753]::getHeldItemOffhand->func_184592_cb
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[6752,6759]::isEmpty->func_190926_b
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemOffhand ()Lnet/minecraft/item/ItemStack;[6778,6796]::getHeldItemOffhand->func_184592_cb
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[6795,6802]::getItem->func_77973_b
+Rename field net/minecraft/item/ItemStack/EMPTY[7155,7160]::EMPTY->field_190927_a
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemMainhand ()Lnet/minecraft/item/ItemStack;[7203,7222]::getHeldItemMainhand->func_184614_ca
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[7239,7246]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[7263,7270]::getItem->func_77973_b
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItemOffhand ()Lnet/minecraft/item/ItemStack;[7347,7365]::getHeldItemOffhand->func_184592_cb
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[7382,7389]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[7405,7412]::getItem->func_77973_b
+Rename method net/minecraft/inventory/IInventory/getStackInSlot (I)Lnet/minecraft/item/ItemStack;[7610,7624]::getStackInSlot->func_70301_a
+Rename method net/minecraft/item/ItemStack/isEmpty ()Z[7654,7661]::isEmpty->func_190926_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[7680,7687]::getItem->func_77973_b
+Rename field net/minecraft/item/ItemStack/EMPTY[7774,7779]::EMPTY->field_190927_a
+Rename method net/minecraft/enchantment/EnchantmentHelper/getEnchantments (Lnet/minecraft/item/ItemStack;)Ljava/util/Map;[8021,8036]::getEnchantments->func_82781_a
 New Key: class java/util/Map
-Rename method net/minecraft/enchantment/Enchantment/isCurse ()Z[7303,7310]::isCurse->func_190936_d
-Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[7706,7719]::setItemDamage->func_77964_b
+Rename method net/minecraft/enchantment/Enchantment/isCurse ()Z[8141,8148]::isCurse->func_190936_d
+Rename method net/minecraft/item/ItemStack/setItemDamage (I)V[8563,8576]::setItemDamage->func_77964_b
 Import: baubles.api.BaubleType
 Import: baubles.api.BaublesApi
 Import: baubles.api.IBauble
@@ -2188,25 +2190,30 @@ Import: java.util.Set
 End  Processing: net/mx/eaddons/item/QuartzRingEventHandler.java
 
 Start Processing: net/mx/eaddons/item/RecipeHandler.java
-Rename field net/minecraft/init/Items/DIAMOND_SWORD[1849,1862]::DIAMOND_SWORD->field_151048_u
-Rename field net/minecraft/init/Items/GOLD_INGOT[1912,1922]::GOLD_INGOT->field_151043_k
-Rename field net/minecraft/init/Items/EMERALD[1975,1982]::EMERALD->field_151166_bC
-Rename field net/minecraft/init/Blocks/OBSIDIAN[2040,2048]::OBSIDIAN->field_150343_Z
-Rename field net/minecraft/init/Items/QUARTZ[2635,2641]::QUARTZ->field_151128_bU
-Rename field net/minecraft/init/Items/GHAST_TEAR[2699,2709]::GHAST_TEAR->field_151073_bk
-Rename field net/minecraft/init/Items/DYE[2763,2766]::DYE->field_151100_aR
-Rename field net/minecraft/init/Items/TOTEM_OF_UNDYING[3499,3515]::TOTEM_OF_UNDYING->field_190929_cY
-Rename field net/minecraft/init/Items/DIAMOND[4059,4066]::DIAMOND->field_151045_i
-Rename field net/minecraft/init/Items/IRON_INGOT[4122,4132]::IRON_INGOT->field_151042_j
-Rename field net/minecraft/init/Items/SKULL[4833,4838]::SKULL->field_151144_bL
-Rename field net/minecraft/init/Items/DRAGON_BREATH[4918,4931]::DRAGON_BREATH->field_185157_bK
-Rename field net/minecraft/init/Items/GLOWSTONE_DUST[6701,6715]::GLOWSTONE_DUST->field_151114_aO
-Rename field net/minecraft/init/Blocks/GOLD_BLOCK[6766,6776]::GOLD_BLOCK->field_150340_R
-Rename field net/minecraft/init/Items/GOLDEN_APPLE[7625,7637]::GOLDEN_APPLE->field_151153_ao
-Rename field net/minecraft/init/Items/GOLDEN_APPLE[7884,7896]::GOLDEN_APPLE->field_151153_ao
-Rename field net/minecraft/init/Items/GHAST_TEAR[8624,8634]::GHAST_TEAR->field_151073_bk
-Rename field net/minecraft/init/Items/GLOWSTONE_DUST[8809,8823]::GLOWSTONE_DUST->field_151114_aO
-Rename field net/minecraft/init/Items/ENDER_EYE[8873,8882]::ENDER_EYE->field_151061_bv
+Rename field net/minecraft/init/Items/DIAMOND_SWORD[1902,1915]::DIAMOND_SWORD->field_151048_u
+Rename field net/minecraft/init/Items/GOLD_INGOT[1965,1975]::GOLD_INGOT->field_151043_k
+Rename field net/minecraft/init/Items/EMERALD[2028,2035]::EMERALD->field_151166_bC
+Rename field net/minecraft/init/Blocks/OBSIDIAN[2093,2101]::OBSIDIAN->field_150343_Z
+Rename field net/minecraft/init/Items/QUARTZ[2688,2694]::QUARTZ->field_151128_bU
+Rename field net/minecraft/init/Items/GHAST_TEAR[2752,2762]::GHAST_TEAR->field_151073_bk
+Rename field net/minecraft/init/Items/DYE[2816,2819]::DYE->field_151100_aR
+Rename field net/minecraft/init/Items/TOTEM_OF_UNDYING[3552,3568]::TOTEM_OF_UNDYING->field_190929_cY
+Rename field net/minecraft/init/Items/DIAMOND[4112,4119]::DIAMOND->field_151045_i
+Rename field net/minecraft/init/Items/IRON_INGOT[4175,4185]::IRON_INGOT->field_151042_j
+Rename field net/minecraft/init/Items/SKULL[4886,4891]::SKULL->field_151144_bL
+Rename field net/minecraft/init/Items/DRAGON_BREATH[4971,4984]::DRAGON_BREATH->field_185157_bK
+Rename field net/minecraft/init/Items/GLOWSTONE_DUST[6754,6768]::GLOWSTONE_DUST->field_151114_aO
+Rename field net/minecraft/init/Blocks/GOLD_BLOCK[6819,6829]::GOLD_BLOCK->field_150340_R
+Rename field net/minecraft/init/Items/GOLDEN_APPLE[7678,7690]::GOLDEN_APPLE->field_151153_ao
+Rename field net/minecraft/init/Items/GOLDEN_APPLE[7937,7949]::GOLDEN_APPLE->field_151153_ao
+Rename field net/minecraft/init/Items/GHAST_TEAR[8677,8687]::GHAST_TEAR->field_151073_bk
+Rename field net/minecraft/init/Items/GLOWSTONE_DUST[8862,8876]::GLOWSTONE_DUST->field_151114_aO
+Rename field net/minecraft/init/Items/ENDER_EYE[8926,8935]::ENDER_EYE->field_151061_bv
+Rename field net/minecraft/init/Items/GHAST_TEAR[9399,9409]::GHAST_TEAR->field_151073_bk
+Rename field net/minecraft/init/Items/GLOWSTONE_DUST[9590,9604]::GLOWSTONE_DUST->field_151114_aO
+Rename field net/minecraft/init/Items/ENDER_EYE[9654,9663]::ENDER_EYE->field_151061_bv
+Rename method net/minecraft/item/crafting/Ingredient/fromStacks ([Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/crafting/Ingredient;[10183,10193]::fromStacks->func_193369_a
+Rename method net/minecraft/item/crafting/Ingredient/fromStacks ([Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/crafting/Ingredient;[10299,10309]::fromStacks->func_193369_a
 Import: net.minecraft.init.Blocks
 Import: net.minecraft.init.Items
 Import: net.minecraft.item.Item
@@ -2280,7 +2287,6 @@ End  Processing: net/mx/eaddons/item/TheBlessEventHandler.java
 Start Processing: net/mx/eaddons/item/TotemOfMaliceConfig.java
 Import: net.minecraft.util.ResourceLocation
 Import: net.minecraftforge.common.config.Configuration
-Import: java.io.File
 Import: java.util.Collections
 Import: java.util.HashSet
 Import: java.util.Set

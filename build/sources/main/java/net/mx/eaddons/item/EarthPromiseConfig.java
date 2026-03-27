@@ -2,8 +2,6 @@ package net.mx.eaddons.item;
 
 import net.minecraftforge.common.config.Configuration;
 
-import java.io.File;
-
 public class EarthPromiseConfig {
     /** Mining speed bonus, percentage (e.g. 20 = +20%). */
     public static int breakSpeedPercent = 20;
@@ -22,9 +20,7 @@ public class EarthPromiseConfig {
     /** When Lost Engine (EnigmaticLegacy) is equipped, cooldowns are multiplied by this (e.g. 0.75 = 25%% reduction). */
     public static float lostEngineCooldownFactor = 0.75F;
 
-    public static void init(File configDir) {
-        Configuration config = new Configuration(new File(configDir, "jmheaven_earth_promise.cfg"));
-        config.load();
+    public static void init(Configuration config) {
 
         breakSpeedPercent = config.getInt("BreakSpeed", "PromiseOfTheEarth", 20, 0, 1000,
                 "Mining speed boost (percentage).");
@@ -50,9 +46,6 @@ public class EarthPromiseConfig {
         lostEngineCooldownFactor = config.getFloat("LostEngineCooldownFactor", "PromiseOfTheEarth", 0.75F, 0.01F, 1.0F,
                 "When Lost Engine (EnigmaticLegacy) is equipped, Earth Promise and Hell Blade Charm cooldowns are multiplied by this. 0.75 = 25% reduction.");
 
-        if (config.hasChanged()) {
-            config.save();
-        }
     }
 
     public static float getBreakSpeedMultiplier() {

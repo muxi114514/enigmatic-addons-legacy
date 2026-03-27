@@ -1,73 +1,73 @@
-[17:00:09] [main/INFO] [GradleStart]: Extra: []
-[17:00:09] [main/INFO] [GradleStart]: Found and added coremod: keletu.enigmaticlegacy.asm.EnigmaticLegacyCore
-[17:00:09] [main/INFO] [GradleStart]: Found and added coremod: fermiumbooter.FermiumPlugin
-[17:00:09] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Administrator/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[17:00:09] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
-[17:00:09] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_231, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_231\jre
-[17:00:09] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[17:00:09] [main/ERROR] [FML]: Full: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[17:00:09] [main/ERROR] [FML]: Trimmed: c:/users/administrator/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[17:00:09] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[17:00:09] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[17:00:09] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[17:00:09] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[17:00:09] [main/INFO] [FML]: Found a command line coremod : keletu.enigmaticlegacy.asm.EnigmaticLegacyCore
-[17:00:09] [main/INFO] [FML]: Ignoring missing certificate for coremod EnigmaticLegacyCore (keletu.enigmaticlegacy.asm.EnigmaticLegacyCore), as this is probably a dev workspace
-[17:00:09] [main/INFO] [FermiumRegistryAPI]: FermiumRegistryAPI supplied "mixins.enigmaticlegacy.json" for early mixin enqueue, adding.
-[17:00:09] [main/INFO] [FermiumRegistryAPI]: FermiumRegistryAPI supplied "mixins.enigmaticlegacy_late.json" for late mixin enqueue, adding.
-[17:00:09] [main/INFO] [FML]: Found a command line coremod : fermiumbooter.FermiumPlugin
-[17:00:09] [main/INFO] [FML]: Ignoring missing certificate for coremod FermiumBooter (fermiumbooter.FermiumPlugin), as this is probably a dev workspace
-[17:00:09] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/E:/enigmatic-addons-legacy/libs/%60FermiumBooter-1.2.0.jar Service=LaunchWrapper Env=CLIENT
-[17:00:09] [main/INFO] [mixin]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@3daf7722
-[17:00:09] [main/INFO] [mixin]: Compatibility level set to JAVA_8
-[17:00:09] [main/INFO] [FML]: Searching E:\enigmatic-addons-legacy\run\.\mods for mods
-[17:00:09] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from `FermiumBooter-1.2.0.jar
-[17:00:09] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from enigmaticlegacy-legacy-2.5.0.jar
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[17:00:09] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[17:00:09] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[17:00:09] [main/INFO] [GradleStart]: Injecting location in coremod keletu.enigmaticlegacy.asm.EnigmaticLegacyCore
-[17:00:09] [main/INFO] [GradleStart]: Injecting location in coremod fermiumbooter.FermiumPlugin
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
-[17:00:09] [main/WARN] [LaunchWrapper]: Tweak class name org.spongepowered.asm.launch.MixinTweaker has already been visited -- skipping
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[17:00:09] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.launch.MixinTweaker
-[17:00:09] [main/WARN] [mixin]: Multiple Mixin containers present, init suppressed for 0.8.7
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[17:00:09] [main/INFO] [FermiumBooter]: FermiumBooter adding "mixins.enigmaticlegacy.json" for early mixin application.
-[17:00:09] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[17:00:10] [main/INFO] [mixin]: Remapping refMap mixins.fermiumbooter.refmap.json using C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg
-[17:00:10] [main/INFO] [MixinExtras|Service]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[17:00:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[17:00:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[17:00:10] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
-[17:00:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[17:00:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[17:00:10] [main/INFO] [mixin]: Remapping refMap mixins.enigmaticlegacy.refmap.json using C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg
-[17:00:10] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[17:00:10] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player72
-[17:00:11] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[17:00:11] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[17:00:12] [Client thread/INFO] [FML]: -- System Details --
+[22:28:40] [main/INFO] [GradleStart]: Extra: []
+[22:28:40] [main/INFO] [GradleStart]: Found and added coremod: keletu.enigmaticlegacy.asm.EnigmaticLegacyCore
+[22:28:40] [main/INFO] [GradleStart]: Found and added coremod: fermiumbooter.FermiumPlugin
+[22:28:40] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Administrator/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[22:28:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:28:40] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:28:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:28:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:28:40] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
+[22:28:40] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_231, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_231\jre
+[22:28:40] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[22:28:40] [main/ERROR] [FML]: Full: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[22:28:40] [main/ERROR] [FML]: Trimmed: c:/users/administrator/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[22:28:40] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[22:28:40] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[22:28:41] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[22:28:41] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[22:28:41] [main/INFO] [FML]: Found a command line coremod : keletu.enigmaticlegacy.asm.EnigmaticLegacyCore
+[22:28:41] [main/INFO] [FML]: Ignoring missing certificate for coremod EnigmaticLegacyCore (keletu.enigmaticlegacy.asm.EnigmaticLegacyCore), as this is probably a dev workspace
+[22:28:41] [main/INFO] [FermiumRegistryAPI]: FermiumRegistryAPI supplied "mixins.enigmaticlegacy.json" for early mixin enqueue, adding.
+[22:28:41] [main/INFO] [FermiumRegistryAPI]: FermiumRegistryAPI supplied "mixins.enigmaticlegacy_late.json" for late mixin enqueue, adding.
+[22:28:41] [main/INFO] [FML]: Found a command line coremod : fermiumbooter.FermiumPlugin
+[22:28:41] [main/INFO] [FML]: Ignoring missing certificate for coremod FermiumBooter (fermiumbooter.FermiumPlugin), as this is probably a dev workspace
+[22:28:41] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/E:/enigmatic-addons-legacy/libs/%60FermiumBooter-1.2.0.jar Service=LaunchWrapper Env=CLIENT
+[22:28:41] [main/INFO] [mixin]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@3daf7722
+[22:28:41] [main/INFO] [mixin]: Compatibility level set to JAVA_8
+[22:28:41] [main/INFO] [FML]: Searching E:\enigmatic-addons-legacy\run\.\mods for mods
+[22:28:41] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from `FermiumBooter-1.2.0.jar
+[22:28:41] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from enigmaticlegacy-legacy-2.5.0.jar
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:28:41] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[22:28:41] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[22:28:41] [main/INFO] [GradleStart]: Injecting location in coremod keletu.enigmaticlegacy.asm.EnigmaticLegacyCore
+[22:28:41] [main/INFO] [GradleStart]: Injecting location in coremod fermiumbooter.FermiumPlugin
+[22:28:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
+[22:28:41] [main/WARN] [LaunchWrapper]: Tweak class name org.spongepowered.asm.launch.MixinTweaker has already been visited -- skipping
+[22:28:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:28:41] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.launch.MixinTweaker
+[22:28:41] [main/WARN] [mixin]: Multiple Mixin containers present, init suppressed for 0.8.7
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:28:41] [main/INFO] [FermiumBooter]: FermiumBooter adding "mixins.enigmaticlegacy.json" for early mixin application.
+[22:28:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:28:41] [main/INFO] [mixin]: Remapping refMap mixins.fermiumbooter.refmap.json using C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg
+[22:28:41] [main/INFO] [MixinExtras|Service]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[22:28:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:28:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:28:42] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[22:28:42] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:28:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:28:42] [main/INFO] [mixin]: Remapping refMap mixins.enigmaticlegacy.refmap.json using C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg
+[22:28:42] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[22:28:42] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player4
+[22:28:43] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:28:43] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[22:28:44] [Client thread/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_231, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 559495560 bytes (533 MB) / 711983104 bytes (679 MB) up to 3622305792 bytes (3454 MB)
+	Memory: 592239976 bytes (564 MB) / 741867520 bytes (707 MB) up to 3622305792 bytes (3454 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
@@ -77,60 +77,60 @@ FermiumBooter (`FermiumBooter-1.2.0.jar)
 EnigmaticLegacyCore (enigmaticlegacy-legacy-2.5.0.jar)
   
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 591.86' Renderer: 'NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2'
-[17:00:12] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
-[17:00:12] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[17:00:12] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
-[17:00:12] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
-[17:00:12] [Client thread/INFO] [FML]: Searching E:\enigmatic-addons-legacy\run\.\mods for mods
-[17:00:13] [Client thread/INFO] [FML]: Forge Mod Loader has identified 8 mods to load
-[17:00:13] [Client thread/INFO] [FermiumBooter]: FermiumBooter adding "mixins.enigmaticlegacy_late.json" for late mixin application.
-[17:00:13] [Client thread/INFO] [mixin]: Remapping refMap mixins.enigmaticlegacy.refmap.json using C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg
-[17:00:13] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, baubles, eaddons, fermiumbooter, enigmaticlegacy] at CLIENT
-[17:00:13] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, baubles, eaddons, fermiumbooter, enigmaticlegacy] at SERVER
-[17:00:13] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Baubles, FMLFileResourcePack:Enigmatic Addons Legacy, FMLFileResourcePack:FermiumBooter, FMLFileResourcePack:enigmaticlegacy-legacy
-[17:00:13] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
-[17:00:13] [Client thread/INFO] [FML]: Found 1169 ObjectHolder annotations
-[17:00:13] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[17:00:13] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[17:00:13] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[17:00:13] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[17:00:13] [Client thread/INFO] [FML]: OBJLoader: Domain eaddons has been added.
-[17:00:13] [Client thread/INFO] [FML]: Applying holder lookups
-[17:00:13] [Client thread/INFO] [FML]: Holder lookups applied
-[17:00:13] [Client thread/INFO] [FML]: Applying holder lookups
-[17:00:13] [Client thread/INFO] [FML]: Holder lookups applied
-[17:00:13] [Client thread/INFO] [FML]: Applying holder lookups
-[17:00:13] [Client thread/INFO] [FML]: Holder lookups applied
-[17:00:13] [Client thread/INFO] [FML]: Applying holder lookups
-[17:00:13] [Client thread/INFO] [FML]: Holder lookups applied
-[17:00:13] [Client thread/INFO] [FML]: Injecting itemstacks
-[17:00:13] [Client thread/INFO] [FML]: Itemstack injection complete
-[17:00:14] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 124395700 nanos
-[17:00:15] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/hhon.ogg does not exist, cannot add it to event enigmaticlegacy:misc.hhon
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/hhoff.ogg does not exist, cannot add it to event enigmaticlegacy:misc.hhoff
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/deflect.ogg does not exist, cannot add it to event enigmaticlegacy:misc.deflect
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/learn.ogg does not exist, cannot add it to event enigmaticlegacy:misc.learn
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/sword_hit_reject.ogg does not exist, cannot add it to event enigmaticlegacy:misc.sword_hit_reject
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/shield_hit_0.ogg does not exist, cannot add it to event enigmaticlegacy:misc.shield_trigger
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/shield_hit_1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.shield_trigger
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_2.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_3.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_fr.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang_fr
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/uneat1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.uneat
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/uneat2.ogg does not exist, cannot add it to event enigmaticlegacy:misc.uneat
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/uneat3.ogg does not exist, cannot add it to event enigmaticlegacy:misc.uneat
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/write1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.write
-[17:00:15] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/write2.ogg does not exist, cannot add it to event enigmaticlegacy:misc.write
-[17:00:15] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[17:00:15] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[17:00:15] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[17:00:15] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[17:00:15] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[17:00:16] [Client thread/INFO] [FML]: Max texture size: 16384
-[17:00:16] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
-[17:00:17] [Client thread/ERROR] [FML]: Parsing error loading recipe enigmaticlegacy:soul_compass
+[22:28:44] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
+[22:28:44] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[22:28:44] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[22:28:44] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[22:28:44] [Client thread/INFO] [FML]: Searching E:\enigmatic-addons-legacy\run\.\mods for mods
+[22:28:44] [Client thread/INFO] [FML]: Forge Mod Loader has identified 8 mods to load
+[22:28:44] [Client thread/INFO] [FermiumBooter]: FermiumBooter adding "mixins.enigmaticlegacy_late.json" for late mixin application.
+[22:28:44] [Client thread/INFO] [mixin]: Remapping refMap mixins.enigmaticlegacy.refmap.json using C:\Users\Administrator\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg-mcp.srg
+[22:28:45] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, baubles, eaddons, fermiumbooter, enigmaticlegacy] at CLIENT
+[22:28:45] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, baubles, eaddons, fermiumbooter, enigmaticlegacy] at SERVER
+[22:28:45] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Baubles, FMLFileResourcePack:Enigmatic Addons Legacy, FMLFileResourcePack:FermiumBooter, FMLFileResourcePack:enigmaticlegacy-legacy
+[22:28:45] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[22:28:45] [Client thread/INFO] [FML]: Found 1169 ObjectHolder annotations
+[22:28:45] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[22:28:45] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[22:28:45] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[22:28:45] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[22:28:45] [Client thread/INFO] [FML]: OBJLoader: Domain eaddons has been added.
+[22:28:45] [Client thread/INFO] [FML]: Applying holder lookups
+[22:28:45] [Client thread/INFO] [FML]: Holder lookups applied
+[22:28:45] [Client thread/INFO] [FML]: Applying holder lookups
+[22:28:45] [Client thread/INFO] [FML]: Holder lookups applied
+[22:28:45] [Client thread/INFO] [FML]: Applying holder lookups
+[22:28:45] [Client thread/INFO] [FML]: Holder lookups applied
+[22:28:45] [Client thread/INFO] [FML]: Applying holder lookups
+[22:28:45] [Client thread/INFO] [FML]: Holder lookups applied
+[22:28:45] [Client thread/INFO] [FML]: Injecting itemstacks
+[22:28:45] [Client thread/INFO] [FML]: Itemstack injection complete
+[22:28:46] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 107692300 nanos
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/hhon.ogg does not exist, cannot add it to event enigmaticlegacy:misc.hhon
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/hhoff.ogg does not exist, cannot add it to event enigmaticlegacy:misc.hhoff
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/deflect.ogg does not exist, cannot add it to event enigmaticlegacy:misc.deflect
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/learn.ogg does not exist, cannot add it to event enigmaticlegacy:misc.learn
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/sword_hit_reject.ogg does not exist, cannot add it to event enigmaticlegacy:misc.sword_hit_reject
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/shield_hit_0.ogg does not exist, cannot add it to event enigmaticlegacy:misc.shield_trigger
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/shield_hit_1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.shield_trigger
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_2.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_3.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/pan_clang_fr.ogg does not exist, cannot add it to event enigmaticlegacy:misc.pan_clang_fr
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/uneat1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.uneat
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/uneat2.ogg does not exist, cannot add it to event enigmaticlegacy:misc.uneat
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/uneat3.ogg does not exist, cannot add it to event enigmaticlegacy:misc.uneat
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/write1.ogg does not exist, cannot add it to event enigmaticlegacy:misc.write
+[22:28:46] [Client thread/WARN] [net.minecraft.client.audio.SoundHandler]: File enigmaticlegacy:sounds/misc/write2.ogg does not exist, cannot add it to event enigmaticlegacy:misc.write
+[22:28:46] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[22:28:47] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[22:28:47] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:28:47] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[22:28:47] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859
+[22:28:47] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[22:28:48] [Client thread/INFO] [FML]: Max texture size: 16384
+[22:28:49] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[22:28:49] [Client thread/ERROR] [FML]: Parsing error loading recipe enigmaticlegacy:soul_compass
 com.google.gson.JsonSyntaxException: Unknown item 'enigmaticlegacy:soul_compass'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStack(CraftingHelper.java:214) ~[CraftingHelper.class:?]
 	at net.minecraftforge.oredict.ShapedOreRecipe.factory(ShapedOreRecipe.java:263) ~[ShapedOreRecipe.class:?]
@@ -157,7 +157,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'enigmaticlegacy:soul_compass'
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[17:00:17] [Client thread/ERROR] [FML]: Parsing error loading recipe enigmaticlegacy:eldritch_pan_from_forgotten_relics
+[22:28:49] [Client thread/ERROR] [FML]: Parsing error loading recipe enigmaticlegacy:eldritch_pan_from_forgotten_relics
 com.google.gson.JsonSyntaxException: Unknown item 'forgotten_relics:oblivion_stone'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:262) ~[CraftingHelper.class:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:544) ~[CraftingHelper.class:?]
@@ -186,59 +186,14 @@ com.google.gson.JsonSyntaxException: Unknown item 'forgotten_relics:oblivion_sto
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[17:00:17] [Client thread/INFO] [FML]: Applying holder lookups
-[17:00:17] [Client thread/INFO] [FML]: Holder lookups applied
-[17:00:17] [Client thread/INFO] [FML]: Injecting itemstacks
-[17:00:17] [Client thread/INFO] [FML]: Itemstack injection complete
-[17:00:17] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 8 mods
-[17:00:17] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[17:00:17] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
-[17:00:18] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FML
-[17:00:20] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[17:00:20] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[17:00:20] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[17:00:20] [Server thread/INFO] [FML]: Applying holder lookups
-[17:00:20] [Server thread/INFO] [FML]: Holder lookups applied
-[17:00:20] [Server thread/INFO] [FML]: Loading dimension 0 (新的世界) (net.minecraft.server.integrated.IntegratedServer@26b5bcb6)
-[17:00:20] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[17:00:20] [Server thread/INFO] [FML]: Loading dimension -1 (新的世界) (net.minecraft.server.integrated.IntegratedServer@26b5bcb6)
-[17:00:20] [Server thread/INFO] [FML]: Loading dimension 1 (新的世界) (net.minecraft.server.integrated.IntegratedServer@26b5bcb6)
-[17:00:20] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[17:00:21] [Server thread/INFO] [FML]: Unloading dimension -1
-[17:00:21] [Server thread/INFO] [FML]: Unloading dimension 1
-[17:00:21] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[17:00:22] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[17:00:22] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[17:00:22] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 8 mods : minecraft@1.12.2,fermiumbooter@1.2.0,eaddons@1.0,FML@8.0.99.99,forge@14.23.5.2847,enigmaticlegacy@2.1.0,baubles@1.5.2,mcp@9.42
-[17:00:22] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[17:00:22] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[17:00:22] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player72[local:E:4fbc7bda] logged in with entity id 321 at (190.15511830679353, 64.49520087700593, 65.80817067299988)
-[17:00:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player72加入了游戏
-[17:00:23] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[17:00:23] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level '新的世界'/overworld
-[17:00:23] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 14 advancements
-[17:01:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player72取得了进度[怪物猎人]
-[17:01:27] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] Player72取得了进度[怪物猎人]
-[17:01:27] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 24 advancements
-[17:01:37] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 25 advancements
-[17:01:47] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] /gamemode, /gamerule
-[17:01:49] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: [Player72: 您的游戏模式已被设置为创造模式 ]
-[17:01:49] [Client thread/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] 你的游戏模式已被更新为创造模式
-[17:01:57] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[17:01:57] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level '新的世界'/overworld
-[17:01:58] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing difficulty to PEACEFUL, from HARD
-[17:02:50] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[17:02:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level '新的世界'/overworld
-[17:02:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[17:02:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[17:02:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player72 lost connection: 连接中止
-[17:02:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player72退出了游戏
-[17:02:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
-[17:02:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[17:02:50] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level '新的世界'/overworld
-[17:02:50] [Server thread/INFO] [FML]: Unloading dimension 0
-[17:02:50] [Server thread/INFO] [FML]: Applying holder lookups
-[17:02:50] [Server thread/INFO] [FML]: Holder lookups applied
-[17:02:51] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
-[17:02:51] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
-[17:02:52] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[22:28:49] [Client thread/INFO] [FML]: Applying holder lookups
+[22:28:49] [Client thread/INFO] [FML]: Holder lookups applied
+[22:28:49] [Client thread/INFO] [FML]: Injecting itemstacks
+[22:28:49] [Client thread/INFO] [FML]: Itemstack injection complete
+[22:28:49] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 8 mods
+[22:28:49] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:28:49] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[22:28:50] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FML
+[22:28:51] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[22:28:51] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[22:28:51] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

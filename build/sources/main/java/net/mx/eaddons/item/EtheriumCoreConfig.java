@@ -2,8 +2,6 @@ package net.mx.eaddons.item;
 
 import net.minecraftforge.common.config.Configuration;
 
-import java.io.File;
-
 public class EtheriumCoreConfig {
     /** Cooldown after activating shield, in ticks (40s = 800). */
     public static int cooldownTicks = 800;
@@ -28,9 +26,7 @@ public class EtheriumCoreConfig {
     /** When wearing full Etherium set + Core, shield threshold = base (40%) * this (1.5 = 60%). */
     public static float shieldThresholdMultiplier = 1.5F;
 
-    public static void init(File configDir) {
-        Configuration config = new Configuration(new File(configDir, "jmheaven_etherium_core.cfg"));
-        config.load();
+    public static void init(Configuration config) {
 
         cooldownTicks = config.getInt("CooldownTicks", "EtheriumCore", 800, 1, 32768,
                 "Cooldown after activating Etherium Shield (ticks). 20 = 1 second. 800 = 40 seconds.");
@@ -55,8 +51,5 @@ public class EtheriumCoreConfig {
         shieldThresholdMultiplier = config.getFloat("ShieldThresholdMultiplier", "EtheriumCore", 1.5F, 1, 3,
                 "When wearing full Etherium set + Core, shield threshold = 40% * this (1.5 = 60%).");
 
-        if (config.hasChanged()) {
-            config.save();
-        }
     }
 }

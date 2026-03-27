@@ -3,7 +3,6 @@ package net.mx.eaddons.item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.config.Configuration;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,9 +18,7 @@ public class ArtificialFlowerConfig {
             "enigmaticlegacy:blazing_strength"
     };
 
-    public static void init(File configDir) {
-        Configuration config = new Configuration(new File(configDir, "jmheaven_artificial_flower.cfg"));
-        config.load();
+    public static void init(Configuration config) {
 
         randomAttributeMaxModifier = config.getInt("RandomAttributeMaxModifier", "ArtificialFlower", 16, 0, 100,
                 "The max modifier of the Magic Quartz Flower. Measures in percentage.");
@@ -51,9 +48,6 @@ public class ArtificialFlowerConfig {
             }
         }
 
-        if (config.hasChanged()) {
-            config.save();
-        }
     }
 
     public static boolean isAttributeBlacklisted(String attributeName) {

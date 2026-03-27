@@ -1,0 +1,33 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "drd",
+    "lXl",
+    "bpb"
+  ],
+  "key": {
+	"X": {
+      "type": "forge:ore_dict",
+      "ore": "amuletEnigmatic"
+    },
+	"b": {
+      "item": "minecraft:dragon_breath"
+    },
+	"l": {
+      "item": "enigmaticlegacy:etherium_ingot"
+    },
+	"p": {
+      "item": "enigmaticlegacy:cosmic_heart"
+    },
+	"r": {
+      "item": "enigmaticlegacy:astral_dust"
+    },
+    "d": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    }
+  },
+  "result": {
+    "item": "enigmaticlegacy:ascension_amulet"
+  }
+}

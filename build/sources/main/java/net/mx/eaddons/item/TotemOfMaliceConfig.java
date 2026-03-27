@@ -3,7 +3,6 @@ package net.mx.eaddons.item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.config.Configuration;
 
-import java.io.File;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -28,9 +27,7 @@ public class TotemOfMaliceConfig {
 
     private static Set<ResourceLocation> illagerIdsParsed = null;
 
-    public static void init(File configDir) {
-        Configuration config = new Configuration(new File(configDir, "jmheaven_totem_of_malice.cfg"));
-        config.load();
+    public static void init(Configuration config) {
 
         damageBonusPercent = config.getInt("DamageBonusPercent", "TotemOfMalice", 150, 0, 1000,
                 "Damage bonus to illagers (percentage). 150 = +150%.");
@@ -57,9 +54,6 @@ public class TotemOfMaliceConfig {
                 "minecraft:evoker,minecraft:vindicator,minecraft:illusion_illager",
                 "Comma-separated entity registry names treated as illagers. Empty = use vanilla AbstractIllager only.");
 
-        if (config.hasChanged()) {
-            config.save();
-        }
         illagerIdsParsed = null;
     }
 

@@ -29,6 +29,7 @@ public class RecipeHandler {
         Item etheriumLegs = getELItem("etherium_legs");
         Item etheriumBoots = getELItem("etherium_boots");
         Item earthHeart = getELItem("earth_heart");
+        Item astralDust = getELItem("astral_dust");
 
         // 1. Emblem of Adventurer
         // L L
@@ -199,6 +200,32 @@ public class RecipeHandler {
                     'X', new ItemStack(earthHeart),
                     'R', new ItemStack(Items.GLOWSTONE_DUST),
                     'E', new ItemStack(Items.ENDER_EYE));
+
+            // Alternative recipe using earth_heart meta=1 (older Enigmatic Legacy variant)
+            GameRegistry.addShapedRecipe(
+                    new ResourceLocation("eaddons", "pure_heart_alt"),
+                    new ResourceLocation("eaddons"),
+                    new ItemStack(ItemPureHeart.INSTANCE),
+                    " L ",
+                    "QXQ",
+                    "RER",
+                    'L', new ItemStack(Items.GHAST_TEAR),
+                    'Q', new ItemStack(ItemIchorDroplet.INSTANCE),
+                    'X', new ItemStack(earthHeart, 1, 1),
+                    'R', new ItemStack(Items.GLOWSTONE_DUST),
+                    'E', new ItemStack(Items.ENDER_EYE));
+        }
+
+        // 10. Earth Heart meta 1 (from normal earth heart + astral dust)
+        if (earthHeart != null && astralDust != null) {
+            GameRegistry.addShapelessRecipe(
+                    new ResourceLocation("eaddons", "earth_heart_meta1"),
+                    new ResourceLocation("eaddons"),
+                    new ItemStack(earthHeart, 1, 1),
+                    new net.minecraft.item.crafting.Ingredient[] {
+                            net.minecraft.item.crafting.Ingredient.fromStacks(new ItemStack(earthHeart, 1, 0)),
+                            net.minecraft.item.crafting.Ingredient.fromStacks(new ItemStack(astralDust))
+                    });
         }
     }
 
