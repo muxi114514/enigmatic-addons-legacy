@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "eaddons:items/illusion_lantern",
+    "layer1": "eaddons:items/illusion_lantern_overlay"
+  }
+}

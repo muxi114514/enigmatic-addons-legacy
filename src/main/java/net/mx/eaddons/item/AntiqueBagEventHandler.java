@@ -6,7 +6,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
-import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingHealEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Loader;
@@ -79,29 +78,7 @@ public class AntiqueBagEventHandler {
         }
     }
 
-    /**
-     * the_infinitum: +10% lifesteal on ALL damage dealt (not just boss/player).
-     * Uses HIGHEST priority to run before other handlers can cancel.
-     */
-    @SubscribeEvent(priority = EventPriority.HIGHEST)
-    public void onLivingDamage(LivingDamageEvent event) {
-        if (event.getEntityLiving().world.isRemote)
-            return;
-
-        Entity source = event.getSource().getTrueSource();
-        if (source instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) source;
-
-            boolean hasInfinitum = ItemAntiqueBag.hasItemInBag(player, THE_INFINITUM);
-
-            if (hasInfinitum) {
-                float lifesteal = event.getAmount() * 0.1F;
-                if (lifesteal > 0) {
-                    player.heal(lifesteal);
-                }
-            }
-        }
-    }
+    // the_infinitum 在书袋里时的吸血已改为 eaddons.lifesteal 属性来源（见 attribute.EAddonsAttributeSources）
 
     /**
      * half_heart_mask: Lock health at 50% of max.

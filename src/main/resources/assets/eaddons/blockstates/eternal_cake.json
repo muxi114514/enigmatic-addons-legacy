@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "bites=0": {
+            "model": "eaddons:eternal_cake"
+        },
+        "bites=1": {
+            "model": "eaddons:eternal_cake_slice_1"
+        },
+        "bites=2": {
+            "model": "eaddons:eternal_cake_slice_2"
+        },
+        "bites=3": {
+            "model": "eaddons:eternal_cake_slice_3"
+        },
+        "bites=4": {
+            "model": "eaddons:eternal_cake_slice_4"
+        },
+        "bites=5": {
+            "model": "eaddons:eternal_cake_slice_5"
+        },
+        "bites=6": {
+            "model": "eaddons:eternal_cake_slice_6"
+        }
+    }
+}

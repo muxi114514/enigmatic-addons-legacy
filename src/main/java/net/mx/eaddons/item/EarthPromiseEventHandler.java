@@ -6,8 +6,11 @@ import net.minecraft.init.SoundEvents;
 import net.mx.eaddons.EAddonsMod;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.DamageSource;
+import net.mx.eaddons.compat.ModCompat;
+import net.mx.eaddons.util.DamageEstimate;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
-import net.minecraftforge.event.world.BlockEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
@@ -44,25 +47,56 @@ public class EarthPromiseEventHandler {
         return ticks;
     }
 
+    /**
+     * First Aid 按部位结算时每个护甲槽都会发一次 LivingDamageEvent；整次免疫已在下面的 LivingHurtEvent 判过，
+     * 这里对这类玩家只再做一次七咒减伤（减伤叠两次，当作特性保留）。
+     */
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public void onLivingDamage(LivingDamageEvent event) {
         if (!(event.getEntity() instanceof EntityPlayer)) return;
-        EntityPlayer player = (EntityPlayer) event.getEntity();
-        if (!ItemEarthPromise.hasEarthPromise(player)) return;
+        boolean allowTrigger = !ModCompat.firstAidTakesOver(event.getEntityLiving());
+        float result = resolve((EntityPlayer) event.getEntity(), event.getSource(), event.getAmount(), false, allowTrigger);
+        if (result < 0) {
+            event.setCanceled(true);
+        } else {
+            event.setAmount(result);
+        }
+    }
 
-        float damage = event.getAmount();
-        float triggerThreshold = player.getHealth() * (EarthPromiseConfig.abilityTriggerPercent / 100.0F);
+    /** 装了 First Aid 时整次免疫在这里判（护甲结算前，每次受伤一次）；LOW 排在 First Aid 的 LOWEST 之前。 */
+    @SubscribeEvent(priority = EventPriority.LOW)
+    public void onLivingHurt(LivingHurtEvent event) {
+        if (!ModCompat.firstAidTakesOver(event.getEntityLiving())) return;
+        float result = resolve((EntityPlayer) event.getEntityLiving(), event.getSource(), event.getAmount(), true, true);
+        if (result < 0) {
+            event.setCanceled(true);
+        } else {
+            event.setAmount(result);
+        }
+    }
 
+    /**
+     * 七咒减伤 + 大伤害整次免疫。
+     *
+     * @param preArmor amount 是否为护甲结算前的数值；是则用估算的护甲后伤害比阈值（1.20.1 原版比的就是护甲后伤害）
+     * @param allowTrigger false 时只做七咒减伤，不判定整次免疫
+     * @return 调整后的伤害；负数表示触发，整次免疫
+     */
+    private static float resolve(EntityPlayer player, DamageSource source, float amount, boolean preArmor,
+                                 boolean allowTrigger) {
+        if (!ItemEarthPromise.hasEarthPromise(player)) return amount;
+
+        float damage = amount;
         if (ItemForgerGem.hasCursedRing(player)) {
             damage = damage * (1.0F - EarthPromiseConfig.getFirstCurseResistanceMultiplier());
         }
-
-        if (isOnCooldown(player)) {
-            event.setAmount(damage);
-            return;
+        if (!allowTrigger || isOnCooldown(player)) {
+            return damage;
         }
 
-        if (player.isEntityAlive() && !event.getSource().isUnblockable() && damage >= triggerThreshold) {
+        float taken = preArmor ? DamageEstimate.taken(player, source, damage) : damage;
+        float triggerThreshold = player.getHealth() * (EarthPromiseConfig.abilityTriggerPercent / 100.0F);
+        if (player.isEntityAlive() && !source.isUnblockable() && taken >= triggerThreshold) {
             setCooldown(player);
             if (!player.world.isRemote && player instanceof EntityPlayerMP) {
                 EAddonsMod.PACKET_HANDLER.sendTo(new EarthPromiseCooldownMessage(getEffectiveCooldownTicks(player)), (EntityPlayerMP) player);
@@ -77,40 +111,12 @@ public class EarthPromiseEventHandler {
                 player.world.playSound(null, player.posX, player.posY, player.posZ,
                         SoundEvents.ENTITY_ENDEREYE_DEATH, SoundCategory.PLAYERS, 5.0F, 1.5F);
             }
-            event.setCanceled(true);
-        } else {
-            event.setAmount(damage);
+            return -1.0F;
         }
+        return damage;
     }
 
-    @SubscribeEvent
-    public void onBreakSpeed(net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed event) {
-        EntityPlayer player = event.getEntityPlayer();
-        if (player == null || !ItemEarthPromise.hasEarthPromise(player)) return;
-        float bonus = EarthPromiseConfig.getBreakSpeedMultiplier();
-        event.setNewSpeed(event.getNewSpeed() * (1.0F + bonus));
-    }
-
-    @SubscribeEvent
-    public void onHarvestDrops(BlockEvent.HarvestDropsEvent event) {
-        EntityPlayer harvester = event.getHarvester();
-        if (harvester == null || !ItemEarthPromise.hasEarthPromise(harvester)) return;
-        int bonus = EarthPromiseConfig.fortuneBonus;
-        if (bonus <= 0 || event.getDrops().isEmpty()) return;
-        java.util.List<net.minecraft.item.ItemStack> drops = event.getDrops();
-        java.util.List<net.minecraft.item.ItemStack> toAdd = new java.util.ArrayList<>();
-        for (net.minecraft.item.ItemStack original : drops) {
-            if (original.isEmpty()) continue;
-            for (int i = 0; i < bonus; i++) {
-                if (harvester.world.rand.nextFloat() < 0.5F) {
-                    net.minecraft.item.ItemStack extra = original.copy();
-                    extra.setCount(1);
-                    toAdd.add(extra);
-                }
-            }
-        }
-        drops.addAll(toAdd);
-    }
+    // 挖掘加速已改为 eaddons.miningSpeed 属性来源（见 attribute.EAddonsAttributeSources）
 
     @SubscribeEvent
     public void onPlayerTick(TickEvent.PlayerTickEvent event) {

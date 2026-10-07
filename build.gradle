@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'eclipse'
 
-version = '1.1'
+version = '1.4'
 group = 'net.mx.eaddons'
 archivesBaseName = 'enigmatic-addons-legacy'
 
@@ -39,6 +39,42 @@ dependencies {
     // EnigmaticLegacy 1.12.2
     def elJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.contains('nigmatic') && it.name.contains('egacy') }
     if (elJar != null) compile files(elJar)
+    // SimpleDifficulty（软依赖，仅编译不打包）：焦阳护符控温兼容
+    def sdJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().contains('simpledifficulty') }
+    if (sdJar != null) deobfProvided name: sdJar.name.replace('.jar', '')
+    // MoBends（软依赖，仅编译不打包）：混沌鞘翅在其动画身体上渲染翅膀
+    def mbJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().contains('mobends') }
+    if (mbJar != null) deobfProvided name: mbJar.name.replace('.jar', '')
+    // 冰与火（软依赖，仅编译不打包）：忘却冰晶借其冻结的冰壳渲染
+    def iafJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().contains('iceandfire') }
+    if (iafJar != null) deobfProvided name: iafJar.name.replace('.jar', '')
+    // JEI（软依赖，仅编译不打包）：术石工作台的配方展示
+    def jeiJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().startsWith('jei') }
+    if (jeiJar != null) deobfProvided name: jeiJar.name.replace('.jar', '')
+    // CraftTweaker（软依赖，仅编译不打包）：术石工作台的脚本接口。
+    // 不能走 deobfProvided——它的 jar 里 META-INF/crafttweaker_at.cfg 有重复条目，
+    // FG2.3 反混淆时会抛 duplicate entry。直接 compileOnly 即可：
+    // 我们只调 CrT 自己的方法（名字不参与混淆），签名里的 MC 类名在 SRG 与 MCP 下一致。
+    def crtJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().contains('crafttweaker') }
+    if (crtJar != null) compileOnly files(crtJar)
+    // BaubleVault（软依赖，仅编译不打包）：天体果实/灵液瓶开饰品槽。
+    // 它是带 mixin 的 coremod，不走 deobf，直接 compileOnly；只调它自己的静态 API（签名里的 MC 类名在 SRG 与 MCP 下一致）
+    def bvJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().contains('baublevault') }
+    if (bvJar != null) compileOnly files(bvJar)
+    // FermiumBooter（硬前置）：提供 Mixin 库与 mixin 配置注册 API
+    def fbJar = fileTree(dir: 'libs', include: '**/*.jar').find { it.name.toLowerCase().contains('fermium') }
+    if (fbJar != null) compile files(fbJar)
+}
+
+// 本模组同时作为 coremod 加载（仅用于注册 mixin 配置），FML 仍会扫描其中的 @Mod
+jar {
+    manifest {
+        attributes(
+                'FMLCorePlugin': 'net.mx.eaddons.core.EAddonsCorePlugin',
+                'FMLCorePluginContainsFMLMod': 'true',
+                'ForceLoadAsMod': 'true'
+        )
+    }
 }
 
 processResources {

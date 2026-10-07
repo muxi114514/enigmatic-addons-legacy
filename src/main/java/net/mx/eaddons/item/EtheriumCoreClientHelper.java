@@ -43,12 +43,10 @@ public final class EtheriumCoreClientHelper {
         return shieldTicksRemaining > 0;
     }
 
-    /** True when full Etherium set + Core and health <= threshold (set-only shield, no active duration). */
+    /** 佩戴核心且护盾生效（护盾阈值属性已同步到客户端） */
     public static boolean hasSetShield(EntityPlayer player) {
-        if (player == null || !ItemEtheriumCore.hasEtheriumCore(player)) return false;
-        if (!ItemEtheriumCore.hasFullEtheriumSet(player)) return false;
-        float threshold = 0.4F * EtheriumCoreConfig.shieldThresholdMultiplier;
-        return player.getHealth() / player.getMaxHealth() <= threshold;
+        return player != null && ItemEtheriumCore.hasEtheriumCore(player)
+                && net.mx.eaddons.attribute.EtheriumShield.isActive(player);
     }
 
     /** True if shield should show aura: active shield or set-only shield. */

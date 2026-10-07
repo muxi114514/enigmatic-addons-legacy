@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.mx.eaddons.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "target": "@env(DEFAULT)",
+  "mixins": [
+    "MixinSuperpositionHandler",
+    "MixinEtheriumArmor",
+    "MixinItemTheCube",
+    "MixinEnigmaticEvents",
+    "MixinItemMiningCharm",
+    "MixinEnigmaticEventsAttributes",
+    "MixinEtheriumArmorShield",
+    "MixinElObjectRegistry",
+    "MixinItemAstralFruit",
+    "MixinItemIchorBottle",
+    "MixinGrowingBloodlustEffect"
+  ],
+  "client": [
+    "MixinElObjectRegistryClient"
+  ],
+  "verbose": false
+}

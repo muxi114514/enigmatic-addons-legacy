@@ -43,12 +43,6 @@ public class ItemForgerGem extends Item implements IBauble {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public boolean hasEffect(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
         list.add("");
         if (GuiScreen.isShiftKeyDown()) {
@@ -60,8 +54,12 @@ public class ItemForgerGem extends Item implements IBauble {
                 list.add("");
                 list.add(TextFormatting.LIGHT_PURPLE + I18n.format("tooltip.eaddons.forger_gem.unbreakable1"));
                 list.add(TextFormatting.LIGHT_PURPLE + I18n.format("tooltip.eaddons.forger_gem.unbreakable2"));
+            } else {
+                list.add("");
+                list.add(TextFormatting.DARK_GRAY + I18n.format("tooltip.eaddons.forger_gem.unbreakable_locked"));
             }
         } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.forger_gem.brief"));
             list.add(I18n.format("tooltip.eaddons.forger_gem.hold_shift"));
         }
         list.add("");

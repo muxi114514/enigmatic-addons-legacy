@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "eaddons:items/3d/magic_quartz_dagger"
+  }
+}

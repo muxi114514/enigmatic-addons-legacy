@@ -85,6 +85,7 @@ public class ItemEtheriumCore extends Item implements IBauble, keletu.enigmaticl
             list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.etherium_core.immunities"));
             list.add(TextFormatting.LIGHT_PURPLE + I18n.format("tooltip.eaddons.etherium_core.shield_threshold"));
         } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.etherium_core.brief"));
             list.add(I18n.format("tooltip.eaddons.etherium_core.hold_shift"));
         }
         list.add("");
@@ -192,6 +193,8 @@ public class ItemEtheriumCore extends Item implements IBauble, keletu.enigmaticl
         for (EntityEquipmentSlot slot : slots) {
             ItemStack stack = player.getItemStackFromSlot(slot);
             if (stack.isEmpty()) return false;
+            // 极恶套装为以太的升级形态，同样计入满套
+            if (ItemEvilArmor.is(stack)) continue;
             ResourceLocation id = ForgeRegistries.ITEMS.getKey(stack.getItem());
             if (id == null || !modId.equals(id.getResourceDomain())) return false;
             String path = id.getResourcePath();

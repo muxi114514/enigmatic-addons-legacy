@@ -149,6 +149,7 @@ public class ItemTotemOfMalice extends Item implements IBauble {
             list.add(I18n.format("tooltip.eaddons.totem_of_malice.durability", getRemainingUses(stack),
                     getMaxDamage(stack)));
         } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.totem_of_malice.brief"));
             list.add(I18n.format("tooltip.eaddons.totem_of_malice.hold_shift"));
         }
         list.add("");
@@ -158,6 +159,13 @@ public class ItemTotemOfMalice extends Item implements IBauble {
     @Optional.Method(modid = "baubles")
     public BaubleType getBaubleType(ItemStack itemstack) {
         return BaubleType.AMULET;
+    }
+
+    // 遵循 EL 的受诅咒物品配置限制佩戴（totem_of_malice 在 1.20 为 ICursed）
+    @Override
+    @Optional.Method(modid = "baubles")
+    public boolean canEquip(ItemStack itemstack, EntityLivingBase entity) {
+        return CursedEquipHelper.canEquip(entity, itemstack);
     }
 
     @Override

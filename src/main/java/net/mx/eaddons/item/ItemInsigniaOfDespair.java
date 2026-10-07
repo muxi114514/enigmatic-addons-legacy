@@ -18,6 +18,7 @@ import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import keletu.enigmaticlegacy.EnigmaticLegacy;
+import net.mx.eaddons.despair.LastStandClient;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -53,8 +54,11 @@ public class ItemInsigniaOfDespair extends Item implements IBauble {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+        list.add(net.minecraft.client.resources.I18n.format("tooltip.eaddons.insignia_despair.desc"));
         list.add(TextFormatting.GRAY + net.minecraft.client.resources.I18n.format("tooltip.eaddons.insignia_despair.line1"));
         list.add(TextFormatting.DARK_GRAY + net.minecraft.client.resources.I18n.format("tooltip.eaddons.insignia_despair.line2"));
+        list.add("");
+        LastStandClient.appendTooltip(worldIn, list);
     }
 
     @Override

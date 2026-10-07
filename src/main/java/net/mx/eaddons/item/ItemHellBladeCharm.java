@@ -7,15 +7,12 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Enchantments;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -31,7 +28,6 @@ import keletu.enigmaticlegacy.EnigmaticLegacy;
 
 import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 @Optional.Interface(iface = "baubles.api.IBauble", modid = "baubles")
@@ -67,11 +63,6 @@ public class ItemHellBladeCharm extends Item implements IBauble {
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack stack) {
         return false;
-    }
-
-    @Override
-    public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
-        ensureCurseEnchantments(stack);
     }
 
     @Override
@@ -126,6 +117,7 @@ public class ItemHellBladeCharm extends Item implements IBauble {
                 }
             }
         } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.hell_blade.brief"));
             list.add(I18n.format("tooltip.eaddons.hell_blade.hold_shift"));
         }
 
@@ -178,7 +170,12 @@ public class ItemHellBladeCharm extends Item implements IBauble {
         if (!(entity instanceof EntityPlayer) || entity.world.isRemote)
             return;
         EntityPlayer player = (EntityPlayer) entity;
-        ensureCurseEnchantments(itemstack);
+        // 手持原初 / 非欧共鸣者时，本饰品的负面完全失效（护甲削减这一半在这里撤掉）
+        if (isNegated(player)) {
+            removeModifier(player, SharedMonsterAttributes.ARMOR, ARMOR_UUID);
+            removeModifier(player, SharedMonsterAttributes.ARMOR_TOUGHNESS, TOUGHNESS_UUID);
+            return;
+        }
         double armorReduction = hasBerserkEmblem(player) ? 0.6 : ARMOR_DEBUFF;
         ensureModifier(player, SharedMonsterAttributes.ARMOR, ARMOR_UUID, "Hell Blade Armor", -armorReduction);
         ensureModifier(player, SharedMonsterAttributes.ARMOR_TOUGHNESS, TOUGHNESS_UUID, "Hell Blade Toughness", -armorReduction);
@@ -213,34 +210,12 @@ public class ItemHellBladeCharm extends Item implements IBauble {
         if (inst != null) inst.removeModifier(uuid);
     }
 
-    /**
-     * Embeds Curse of Vanishing + Curse of Binding into the ItemStack.
-     * SuperpositionHandler.getCurseAmount iterates getFullEquipment (which includes baubles)
-     * and counts enchantments where isCurse()==true. These 2 curses make the charm
-     * contribute +2 to the curse count, matching the high-version Mixin behavior.
-     * HideFlags=1 suppresses the enchantment lines in the tooltip.
-     */
-    private static void ensureCurseEnchantments(ItemStack stack) {
-        Map<net.minecraft.enchantment.Enchantment, Integer> enchants = EnchantmentHelper.getEnchantments(stack);
-        boolean changed = false;
-        if (!enchants.containsKey(Enchantments.VANISHING_CURSE)) {
-            enchants.put(Enchantments.VANISHING_CURSE, 1);
-            changed = true;
-        }
-        if (!enchants.containsKey(Enchantments.BINDING_CURSE)) {
-            enchants.put(Enchantments.BINDING_CURSE, 1);
-            changed = true;
-        }
-        if (changed) {
-            EnchantmentHelper.setEnchantments(enchants, stack);
-        }
-        NBTTagCompound tag = stack.getTagCompound();
-        if (tag != null && tag.getInteger("HideFlags") != 1) {
-            tag.setInteger("HideFlags", 1);
-        }
-    }
-
     // --- Bauble detection helpers ---
+
+    /** 负面是否被立方共鸣抵消（增伤与处决照常，只有代价失效）。 */
+    public static boolean isNegated(EntityPlayer player) {
+        return net.mx.eaddons.spellstone.ResonanceLink.holdsActiveLink(player);
+    }
 
     public static boolean hasHellBladeCharm(EntityPlayer player) {
         return BaublesApi.isBaubleEquipped(player, INSTANCE) != -1;

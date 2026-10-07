@@ -1,0 +1,80 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "eaddons:items/spellstone_sword"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "form": 0.1
+      },
+      "model": "eaddons:item/spellstone_sword/golem_heart"
+    },
+    {
+      "predicate": {
+        "form": 0.2
+      },
+      "model": "eaddons:item/spellstone_sword/magma_heart"
+    },
+    {
+      "predicate": {
+        "form": 0.3
+      },
+      "model": "eaddons:item/spellstone_sword/ocean_stone"
+    },
+    {
+      "predicate": {
+        "form": 0.4
+      },
+      "model": "eaddons:item/spellstone_sword/forgotten_ice"
+    },
+    {
+      "predicate": {
+        "form": 0.5
+      },
+      "model": "eaddons:item/spellstone_sword/revival_leaf"
+    },
+    {
+      "predicate": {
+        "form": 0.6
+      },
+      "model": "eaddons:item/spellstone_sword/angel_blessing"
+    },
+    {
+      "predicate": {
+        "form": 0.7
+      },
+      "model": "eaddons:item/spellstone_sword/lost_engine"
+    },
+    {
+      "predicate": {
+        "form": 0.8
+      },
+      "model": "eaddons:item/spellstone_sword/illusion_lantern"
+    },
+    {
+      "predicate": {
+        "form": 0.9
+      },
+      "model": "eaddons:item/spellstone_sword/eye_of_nebula"
+    },
+    {
+      "predicate": {
+        "form": 1.0
+      },
+      "model": "eaddons:item/spellstone_sword/void_pearl"
+    },
+    {
+      "predicate": {
+        "form": 1.1
+      },
+      "model": "eaddons:item/spellstone_sword/primeval_spellstone"
+    },
+    {
+      "predicate": {
+        "form": 1.2
+      },
+      "model": "eaddons:item/spellstone_sword/the_cube"
+    }
+  ]
+}

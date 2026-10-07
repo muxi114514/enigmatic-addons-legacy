@@ -29,6 +29,14 @@ public class ArtificialFlowerEventHandler {
         }
     }
 
+    /** 重生/出末地会新建玩家对象并沿用旧实体 ID，表里的键仍是旧对象；清掉后花会按新对象重新登记 */
+    @SubscribeEvent
+    public void onPlayerRespawn(PlayerEvent.PlayerRespawnEvent event) {
+        if (event.player instanceof EntityPlayerMP) {
+            PLAYER_ATTRIBUTE_MAP.remove((EntityPlayerMP) event.player);
+        }
+    }
+
     @SubscribeEvent
     public void onPotionApplicable(PotionEvent.PotionApplicableEvent event) {
         if (!(event.getEntityLiving() instanceof EntityPlayer)) return;
@@ -38,7 +46,10 @@ public class ArtificialFlowerEventHandler {
         List<ItemStack> flowers = getAllFlowers(player);
         for (ItemStack flower : flowers) {
             Potion immune = ItemArtificialFlower.Helper.getEffect(flower, 1);
-            if (immune != null && immune == effect.getPotion()) {
+            // 免疫黑名单里的效果即使旧花上已经有，也不再拦（古董袋里的花不走 onUpdate，NBT 不会被清）
+            if (immune != null && immune == effect.getPotion()
+                    && (!ArtificialFlowerConfig.isImmunityBlacklisted(immune.getRegistryName())
+                    || ItemArtificialFlower.Helper.isCoreChosen(flower, true, 1))) {
                 event.setResult(Event.Result.DENY);
                 return;
             }

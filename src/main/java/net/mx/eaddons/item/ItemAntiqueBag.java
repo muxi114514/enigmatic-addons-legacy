@@ -1,5 +1,8 @@
 package net.mx.eaddons.item;
 
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryEnderChest;
 import net.minecraft.item.EnumRarity;
@@ -12,13 +15,19 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.mx.eaddons.EAddonsMod;
 import keletu.enigmaticlegacy.EnigmaticLegacy;
 
+import javax.annotation.Nullable;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ItemAntiqueBag extends Item {
     public static final ItemAntiqueBag INSTANCE = new ItemAntiqueBag();
@@ -26,13 +35,21 @@ public class ItemAntiqueBag extends Item {
     private static final String NBT_TAG = "JMHeavenAntiqueBag";
 
     /**
-     * List of allowed item registry names that can be placed in the bag.
+     * 可放进书袋的物品注册名。附属模组用 {@link #registerAllowedItem} 追加（如神秘佳肴的闪耀之书）。
      */
-    public static final List<ResourceLocation> ALLOWED_ITEMS = Arrays.asList(
+    public static final List<ResourceLocation> ALLOWED_ITEMS = new CopyOnWriteArrayList<>(Arrays.asList(
             new ResourceLocation("enigmaticlegacy", "the_acknowledgment"),
             new ResourceLocation("enigmaticlegacy", "the_twist"),
             new ResourceLocation("enigmaticlegacy", "the_infinitum"),
-            new ResourceLocation("enigmaticlegacy", "half_heart_mask"));
+            new ResourceLocation("enigmaticlegacy", "half_heart_mask"),
+            new ResourceLocation("eaddons", "the_bless")));
+
+    /** 追加可放进书袋的物品（重复登记无效） */
+    public static void registerAllowedItem(ResourceLocation id) {
+        if (!ALLOWED_ITEMS.contains(id)) {
+            ALLOWED_ITEMS.add(id);
+        }
+    }
 
     public ItemAntiqueBag() {
         setMaxDamage(0);
@@ -45,6 +62,33 @@ public class ItemAntiqueBag extends Item {
     @Override
     public EnumRarity getRarity(ItemStack stack) {
         return EnumRarity.RARE;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+        list.add("");
+        if (GuiScreen.isShiftKeyDown()) {
+            list.add(TextFormatting.GOLD + I18n.format("tooltip.eaddons.antique_bag.header"));
+            list.add(TextFormatting.YELLOW + I18n.format("tooltip.eaddons.antique_bag.effect_ack"));
+            list.add(TextFormatting.YELLOW + I18n.format("tooltip.eaddons.antique_bag.effect_twist"));
+            list.add(TextFormatting.YELLOW + I18n.format("tooltip.eaddons.antique_bag.effect_infinitum"));
+            list.add(TextFormatting.YELLOW + I18n.format("tooltip.eaddons.antique_bag.effect_bless"));
+            list.add(TextFormatting.RED + I18n.format("tooltip.eaddons.antique_bag.effect_mask"));
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.antique_bag.flower_slot"));
+        } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.antique_bag.brief"));
+            // 显示可放入的物品名称
+            for (ResourceLocation id : ALLOWED_ITEMS) {
+                Item item = ForgeRegistries.ITEMS.getValue(id);
+                if (item != null) {
+                    list.add(TextFormatting.DARK_GRAY + " - " + I18n.format(item.getUnlocalizedName() + ".name"));
+                }
+            }
+            list.add(TextFormatting.DARK_GRAY + " - " + I18n.format("item.artificial_flower.name"));
+            list.add(I18n.format("tooltip.eaddons.antique_bag.hold_shift"));
+        }
+        list.add("");
     }
 
     @Override

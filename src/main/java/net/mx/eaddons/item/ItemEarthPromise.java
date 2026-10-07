@@ -19,13 +19,14 @@ import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import keletu.enigmaticlegacy.EnigmaticLegacy;
+import keletu.enigmaticlegacy.util.interfaces.IFortuneBonus;
 
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.UUID;
 
 @Optional.Interface(iface = "baubles.api.IBauble", modid = "baubles")
-public class ItemEarthPromise extends Item implements IBauble {
+public class ItemEarthPromise extends Item implements IBauble, IFortuneBonus {
     public static final ItemEarthPromise INSTANCE = new ItemEarthPromise();
 
     private static final UUID ARMOR_UUID = UUID.fromString("5b353dce-5f84-c0e8-fa7b-4821a77c3d82");
@@ -75,6 +76,7 @@ public class ItemEarthPromise extends Item implements IBauble {
                 list.add(TextFormatting.LIGHT_PURPLE + I18n.format("tooltip.eaddons.earth_promise.first_curse_value", EarthPromiseConfig.firstCurseResistancePercent + "%"));
             }
         } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.earth_promise.brief"));
             list.add(I18n.format("tooltip.eaddons.earth_promise.hold_shift"));
         }
         list.add("");
@@ -84,6 +86,13 @@ public class ItemEarthPromise extends Item implements IBauble {
     @Optional.Method(modid = "baubles")
     public BaubleType getBaubleType(ItemStack itemstack) {
         return BaubleType.RING;
+    }
+
+    // 遵循 EL 的受诅咒/受祝福物品配置限制佩戴（earth_promise 在 1.20 为 ICursed+IBlessed）
+    @Override
+    @Optional.Method(modid = "baubles")
+    public boolean canEquip(ItemStack itemstack, EntityLivingBase entity) {
+        return CursedEquipHelper.canEquip(entity, itemstack);
     }
 
     @Override
@@ -122,6 +131,16 @@ public class ItemEarthPromise extends Item implements IBauble {
     private static void removeModifier(EntityPlayer player, net.minecraft.entity.ai.attributes.IAttribute attr, UUID uuid) {
         net.minecraft.entity.ai.attributes.IAttributeInstance inst = player.getEntityAttribute(attr);
         if (inst != null) inst.removeModifier(uuid);
+    }
+
+    /**
+     * 时运加成走 EnigmaticLegacy 的 IFortuneBonus 接口：
+     * 其 MixinBlockDropEvent 会扫描饰品栏，把加成累加进 Block#harvestBlock 的真实 fortune 参数，
+     * 由方块自身决定是否加倍（矿物/作物才吃时运，自掉落方块不受影响），避免手动复制掉落物导致刷物品。
+     */
+    @Override
+    public int bonusLevelFortune() {
+        return Math.max(0, EarthPromiseConfig.fortuneBonus);
     }
 
     public static boolean hasEarthPromise(EntityPlayer player) {

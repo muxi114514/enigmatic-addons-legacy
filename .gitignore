@@ -1,0 +1,29 @@
+# Gradle cache and build outputs
+.gradle/
+build/
+bin/
+out/
+classes/
+
+# Dev run directory
+run/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# Local reference sources (not part of this mod)
+EnigmaticLegacyLegacy-master/
+MoBends-1.X-forge-1.12/
+SimpleDifficulty-master/
+mods_hoardercraft-master/
+/net/
+
+# Local notes
+PORTING_HANDOFF.md

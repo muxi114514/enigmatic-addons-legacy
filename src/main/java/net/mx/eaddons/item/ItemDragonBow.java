@@ -161,10 +161,13 @@ public class ItemDragonBow extends ItemBow {
     public void addInformation(ItemStack stack, @Nullable World world, List<String> tooltip, ITooltipFlag flag) {
         List<PotionEffect> effects = getCustomEffects(stack.getTagCompound());
         if (effects.isEmpty()) {
-            tooltip.add(TextFormatting.DARK_PURPLE + "You can combine this with potions.");
+            tooltip.add(TextFormatting.DARK_PURPLE + net.minecraft.client.resources.I18n.format("tooltip.eaddons.dragon_bow.hint"));
         } else {
             for (PotionEffect effect : effects) {
-                tooltip.add(TextFormatting.BLUE + effect.getEffectName());
+                String name = net.minecraft.client.resources.I18n.format(effect.getEffectName());
+                int amp = effect.getAmplifier();
+                String level = amp > 0 ? " " + net.minecraft.client.resources.I18n.format("enchantment.level." + (amp + 1)) : "";
+                tooltip.add(TextFormatting.BLUE + name + level);
             }
         }
     }

@@ -33,6 +33,16 @@ public class HellBladeCharmEventHandler {
         return "player".equals(damageType) || "mob".equals(damageType);
     }
 
+    /**
+     * 训练假人不触发处决：否则打一下就按假人当前血量回满血，还会把 DPS 读数放大十倍。
+     * <p>与 1.20.1 原作一致，按注册名里是否含 "dummy" 判断（整合包里的是 {@code testdummy:dummy}），
+     * 这样别的模组的假人也能一并盖到。
+     */
+    private static boolean isDummy(EntityLivingBase victim) {
+        net.minecraft.util.ResourceLocation id = net.minecraft.entity.EntityList.getKey(victim);
+        return id != null && id.getResourcePath().contains("dummy");
+    }
+
     @SubscribeEvent(priority = EventPriority.HIGH)
     public void onLivingHurt(LivingHurtEvent event) {
         if (event.getEntityLiving().world.isRemote)
@@ -59,7 +69,7 @@ public class HellBladeCharmEventHandler {
         // --- Victim has charm: increased damage taken ---
         if (event.getEntityLiving() instanceof EntityPlayer) {
             EntityPlayer player = (EntityPlayer) event.getEntityLiving();
-            if (ItemHellBladeCharm.hasHellBladeCharm(player)) {
+            if (ItemHellBladeCharm.hasHellBladeCharm(player) && !ItemHellBladeCharm.isNegated(player)) {
                 float bonus = ItemHellBladeCharm.DAMAGE_TAKEN_BONUS;
                 if (ItemHellBladeCharm.hasBerserkEmblem(player))
                     bonus *= 0.5F;
@@ -96,6 +106,8 @@ public class HellBladeCharmEventHandler {
             return;
 
         EntityLivingBase victim = event.getEntityLiving();
+        if (isDummy(victim))
+            return;
         float threshold = ItemHellBladeCharm.getKillThreshold(player);
         float healthRequired = victim.getHealth() * threshold;
 

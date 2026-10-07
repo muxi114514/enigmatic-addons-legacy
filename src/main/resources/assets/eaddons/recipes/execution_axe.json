@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AVN",
+    "PXP",
+    " R "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "V": {
+      "item": "minecraft:skull",
+      "data": 1
+    },
+    "N": {
+      "type": "forge:ore_dict",
+      "ore": "ingotNetherite"
+    },
+    "P": {
+      "item": "eaddons:infernal_cinder"
+    },
+    "X": {
+      "item": "minecraft:diamond_axe"
+    },
+    "R": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "eaddons:execution_axe"
+  }
+}

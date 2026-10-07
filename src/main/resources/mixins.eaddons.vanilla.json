@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "net.mx.eaddons.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "target": "@env(DEFAULT)",
+  "mixins": [
+    "MixinEntityIsWet",
+    "MixinEntityLivingTotem"
+  ],
+  "verbose": false
+}

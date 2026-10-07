@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "eaddons:spellstone_table" }
+  }
+}

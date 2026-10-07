@@ -19,6 +19,7 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
+import net.mx.eaddons.despair.DespairLastStand;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -86,6 +87,9 @@ public class TotemOfMaliceEventHandler {
         if (!(event.getEntityLiving() instanceof EntityPlayer))
             return;
         if (event.getEntityLiving().world.isRemote)
+            return;
+        // 绝望者证章绝境失败的死亡不可挽回
+        if (DespairLastStand.isDespairDeath(event.getSource()))
             return;
 
         EntityPlayer player = (EntityPlayer) event.getEntityLiving();

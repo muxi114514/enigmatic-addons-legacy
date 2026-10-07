@@ -52,12 +52,6 @@ public class ItemQuartzRing extends Item implements IBauble {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public boolean hasEffect(ItemStack stack) {
-        return true;
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
         list.add("");
         if (GuiScreen.isShiftKeyDown()) {
@@ -66,6 +60,7 @@ public class ItemQuartzRing extends Item implements IBauble {
             list.add(TextFormatting.BLUE + I18n.format("tooltip.eaddons.quartz_ring.armor"));
             list.add(TextFormatting.GREEN + I18n.format("tooltip.eaddons.quartz_ring.luck"));
         } else {
+            list.add(TextFormatting.GRAY + I18n.format("tooltip.eaddons.quartz_ring.brief"));
             list.add(I18n.format("tooltip.eaddons.quartz_ring.hold_shift"));
         }
         list.add("");

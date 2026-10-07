@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BXB",
+    "XAX",
+    "BXB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "X": {
+      "item": "minecraft:baked_potato"
+    },
+    "A": {
+      "item": "eaddons:infernal_cinder"
+    }
+  },
+  "result": {
+    "item": "eaddons:exterminato"
+  }
+}

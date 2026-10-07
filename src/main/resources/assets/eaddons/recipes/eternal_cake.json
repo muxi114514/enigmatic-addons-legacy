@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GBG",
+    "ACA",
+    "FXF"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:ghast_tear"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "A": {
+      "item": "enigmaticlegacy:astral_dust"
+    },
+    "C": {
+      "item": "minecraft:cake"
+    },
+    "F": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "X": {
+      "item": "enigmaticlegacy:cosmic_heart"
+    }
+  },
+  "result": {
+    "item": "eaddons:eternal_cake"
+  }
+}

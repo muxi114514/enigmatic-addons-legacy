@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "enigmaticlegacy:etherium_ingot"
+    }
+  ],
+  "result": {
+    "item": "eaddons:etherium_nugget",
+    "count": 9
+  }
+}

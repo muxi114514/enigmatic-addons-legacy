@@ -1,14 +1,9 @@
 package net.mx.eaddons.item;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.IProjectile;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.entity.projectile.EntityArrow;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.SoundCategory;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -51,16 +46,8 @@ public class EtheriumCoreEventHandler {
         COOLDOWN_UNTIL.put(player.getUniqueID(), player.world.getTotalWorldTime() + ticks);
     }
 
-    /** True if our active shield is up, or full Etherium set + health <= 60% with Core. */
-    public static boolean hasShield(EntityPlayer player) {
-        if (player == null || !ItemEtheriumCore.hasEtheriumCore(player)) return false;
-        if (SHIELD_TICKS.getOrDefault(player.getUniqueID(), 0) > 0) return true;
-        if (ItemEtheriumCore.hasFullEtheriumSet(player)) {
-            float threshold = 0.4F * EtheriumCoreConfig.shieldThresholdMultiplier;
-            return player.getHealth() / player.getMaxHealth() <= threshold;
-        }
-        return false;
-    }
+    // 护盾判定统一读 eaddons.etheriumShield 属性（核心的阈值倍率与主动护盾都是属性来源），
+    // 结算交给 EL 的以太护盾（减伤、击退、免投射物）。原先这里与 EL 各减一半，满套低血时实际 ×0.25。
 
     public static int getShieldTicks(EntityPlayer player) {
         return player == null ? 0 : SHIELD_TICKS.getOrDefault(player.getUniqueID(), 0);
@@ -115,15 +102,8 @@ public class EtheriumCoreEventHandler {
                 || "explosion.player".equals(type);
         if (immune) {
             event.setCanceled(true);
-            return;
         }
-
-        if (event.getSource().getImmediateSource() instanceof IProjectile || event.getSource().getImmediateSource() instanceof EntityArrow) {
-            if (hasShield(player)) {
-                event.setCanceled(true);
-                player.world.playSound(null, player.getPosition(), SoundEvents.BLOCK_NOTE_PLING, SoundCategory.PLAYERS, 1.0F, 0.9F + (float) (Math.random() * 0.1));
-            }
-        }
+        // 护盾免疫投射物由 EL 的以太护盾处理（判定已改读属性）
     }
 
     @SubscribeEvent
@@ -137,22 +117,7 @@ public class EtheriumCoreEventHandler {
                 float current = COUNTERATTACK_STORED.getOrDefault(victim.getUniqueID(), 0F);
                 float capped = Math.min(EtheriumCoreConfig.damageConversionCap, current + add);
                 COUNTERATTACK_STORED.put(victim.getUniqueID(), capped);
-                if (hasShield(victim)) {
-                    Entity source = event.getSource().getTrueSource();
-                    if (source instanceof EntityLivingBase) {
-                        EntityLivingBase attacker = (EntityLivingBase) source;
-                        double dx = victim.posX - attacker.posX;
-                        double dz = victim.posZ - attacker.posZ;
-                        double len = Math.sqrt(dx * dx + dz * dz);
-                        if (len > 0.001) {
-                            float rx = (float) (dx / len);
-                            float rz = (float) (dz / len);
-                            attacker.knockBack(victim, 0.75F, rx, rz);
-                        }
-                        victim.world.playSound(null, victim.getPosition(), SoundEvents.ITEM_SHIELD_BLOCK, SoundCategory.PLAYERS, 1.0F, 0.9F + (float) (Math.random() * 0.1));
-                    }
-                    event.setAmount(event.getAmount() * 0.5F);
-                }
+                // 护盾的减伤与击退由 EL 的以太护盾处理（判定已改读属性）
             }
         }
 

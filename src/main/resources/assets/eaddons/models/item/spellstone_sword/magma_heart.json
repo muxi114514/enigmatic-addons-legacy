@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "eaddons:items/spellstone_sword/blazing_core"
+  }
+}

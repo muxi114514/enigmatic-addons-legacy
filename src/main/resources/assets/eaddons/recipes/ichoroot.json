@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QLQ",
+    "QXQ",
+    "QLQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "minecraft:beetroot"
+    },
+    "L": {
+      "item": "minecraft:ghast_tear"
+    },
+    "X": {
+      "item": "eaddons:ichor_droplet"
+    }
+  },
+  "result": {
+    "item": "eaddons:ichoroot",
+    "count": 6
+  }
+}

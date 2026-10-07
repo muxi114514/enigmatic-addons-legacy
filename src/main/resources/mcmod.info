@@ -11,6 +11,7 @@
     "credits": "Original Enigmatic Addons by auviotre",
     "logoFile": "",
     "screenshots": [],
-    "dependencies": ["fermiumbooter", "baubles", "enigmaticlegacy"]
+    "dependencies": ["fermiumbooter", "baubles", "enigmaticlegacy"],
+    "requiredMods": ["fermiumbooter", "baubles", "enigmaticlegacy"]
   }
 ]

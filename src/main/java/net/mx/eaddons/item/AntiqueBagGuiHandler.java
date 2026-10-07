@@ -9,6 +9,7 @@ import javax.annotation.Nullable;
 public class AntiqueBagGuiHandler implements IGuiHandler {
     public static final int GUI_ID = 100;
     public static final int FLOWER_GUI_ID = 101;
+    public static final int SPELLSTONE_TABLE_GUI_ID = 102;
 
     @Nullable
     @Override
@@ -18,6 +19,9 @@ public class AntiqueBagGuiHandler implements IGuiHandler {
         }
         if (ID == FLOWER_GUI_ID) {
             return new ContainerArtificialFlower(player);
+        }
+        if (ID == SPELLSTONE_TABLE_GUI_ID) {
+            return new net.mx.eaddons.table.ContainerSpellstoneTable(player);
         }
         return null;
     }
@@ -30,6 +34,9 @@ public class AntiqueBagGuiHandler implements IGuiHandler {
         }
         if (ID == FLOWER_GUI_ID) {
             return new GuiArtificialFlower(new ContainerArtificialFlower(player));
+        }
+        if (ID == SPELLSTONE_TABLE_GUI_ID) {
+            return new net.mx.eaddons.client.GuiSpellstoneTable(player);
         }
         return null;
     }
